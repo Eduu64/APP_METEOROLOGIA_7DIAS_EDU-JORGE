@@ -49,7 +49,6 @@ public class PI2 {
 			}else {
 				Scanner p = new Scanner(url.openStream()); //Escanea el output de la API
 				respuesta = p.nextLine(); //Guarda output en una variable
-				System.out.println(respuesta);
 				p.close();
 			}
 
@@ -62,11 +61,8 @@ public class PI2 {
 
 	// Función que procesa la respuesta de la API y obtiene la información de temperatura para los días requeridos
 	public static void desfragmentacion(String info, JSONObject ob) {
-		Date dia = new Date();
-		Date dia_7 = new Date();
-
+		
 		SimpleDateFormat hr = new SimpleDateFormat("yyyy-MM-dd HH:00");
-		String hora_actual = hr.format(dia);
 
 		double [] temperatura = new double[192];
 		int cod[] = new int[7];
@@ -98,19 +94,18 @@ public class PI2 {
 		}
 
 		Calendar c = Calendar.getInstance();
-		String []dias_semana = new String[6];
+		String []dias_semana = new String[7];
 
-		for(int z=0;z<6;z++) {
-			int x=1;
-			c.setTime(dia_7);
-			c.add(Calendar.DATE, x);
-			dia_7 = c.getTime();
-			dias_semana[z]=hr.format(dia_7);
-			x++;
+		for(int z=0;z<=6;z++) {
+			Date dia = new Date();
+			c.setTime(dia);
+			c.add(Calendar.DATE, z);
+			dia = c.getTime();
+			dias_semana[z]=hr.format(dia);
 		}
-		
+
 		for(int i = 0;i<=6;i++) {
-			
+
 			cod[i]=codigo.getInt(i);
 			temperatura_max[i]=temp_max.getDouble(i);
 			temperatura_min[i]=temp_min.getDouble(i);
@@ -119,26 +114,21 @@ public class PI2 {
 			niev[i]=nieve.getDouble(i);
 			vient[i]=viento.getDouble(i);
 
-					
-			
+
+
 		}
 
 
-
+		int y = 0;
 		for (int i = 0; i < dias.length(); i++) {
 
-			if(fecha[i].equals(hora_actual)) {
-				System.out.println(fecha[i]+": "+temperatura[i]);
-				System.out.println(cod[0]+" "+temperatura_max[0]+" "+temperatura_min[0]+" "+lluv[0]+" "+hor_lluv[0]+" "+niev[0]+" "+vient[0]);
+			if(fecha[i].equals(dias_semana[y])) {
+				System.out.println(dias_semana[y]+": "+temperatura[i]);
+				System.out.println(cod[y]+" "+temperatura_max[y]+" "+temperatura_min[y]+" "+lluv[y]+" "+hor_lluv[y]+" "+niev[y]+" "+vient[y]);
+				y++;
 				
-			}
-
-			for(int y=0;y<6;y++) {
-				if(fecha[i].equals(dias_semana[y])) {
-					System.out.println(dias_semana[y]+": "+temperatura[i]);
-					if(y>0) {
-						System.out.println(cod[y]+" "+temperatura_max[y]+" "+temperatura_min[y]+" "+lluv[y]+" "+hor_lluv[y]+" "+niev[y]+" "+vient[y]);
-					}
+				if(y>6) {
+					break;
 				}
 
 			}
