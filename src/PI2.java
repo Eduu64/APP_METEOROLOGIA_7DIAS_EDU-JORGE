@@ -61,7 +61,7 @@ public class PI2 {
 
 	// Función que procesa la respuesta de la API y obtiene la información de temperatura para los días requeridos
 	public static void desfragmentacion(String info, JSONObject ob) {
-		
+
 		SimpleDateFormat hr = new SimpleDateFormat("yyyy-MM-dd HH:00");
 
 		double [] temperatura = new double[192];
@@ -126,21 +126,24 @@ public class PI2 {
 				System.out.println(dias_semana[y]+": "+temperatura[i]);
 				System.out.println(cod[y]+" "+temperatura_max[y]+" "+temperatura_min[y]+" "+lluv[y]+" "+hor_lluv[y]+" "+niev[y]+" "+vient[y]);
 				y++;
-				
+
 				if(y>6) {
 					break;
 				}
 
 			}
 
-		}
+		}//fin del bucle
+		
+		
 
 	}
 
 
 
 	public static void main(String[] args) {
-
+		GUI interfaz = new GUI();
+		interfaz.setVisible(true);
 		String informacionAPI = llamada();
 		JSONObject ob = new JSONObject(informacionAPI);
 		desfragmentacion(informacionAPI,ob);
