@@ -1,4 +1,5 @@
 import java.awt.Color;
+
 import java.awt.Font;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -6,7 +7,6 @@ import java.text.SimpleDateFormat;
 import java.util.Scanner;
 
 import javax.swing.ImageIcon;
-import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -20,8 +20,9 @@ import org.json.JSONObject;
 
 import java.util.Calendar;
 import java.util.Date;
-import java.time.LocalDateTime;
 
+//Eduardo Morales Calvo y Jorge Pérez de Dios
+//https://github.com/Eduu64/APP_METEOROLOGIA_7DIAS_EDU-JORGE.git
 public class PI2 {
 
 
