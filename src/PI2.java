@@ -29,12 +29,12 @@ public class PI2 {
 	// Función que realiza la llamada a la API y devuelve la respuesta
 	public static String llamada() {
 		String respuesta="";
-		Date dia = new Date();
-		Date dia_final = new Date();
+		Date dia = new Date(); //Objeto date
+		Date dia_final = new Date();//Objeto date
 
-		SimpleDateFormat ft = new SimpleDateFormat("yyyy-MM-dd");
+		SimpleDateFormat ft = new SimpleDateFormat("yyyy-MM-dd");//Formato para objeto date
 
-		//fecha+7
+		//fecha+7 dias para establecer el rango de busqueda de dias (quiero que me diga la meteorología de 7 dias)
 		Calendar c = Calendar.getInstance();
 		c.setTime(dia_final);
 		c.add(Calendar.DATE, 7);
@@ -48,15 +48,17 @@ public class PI2 {
 		//System.out.println(fecha_actual);
 		//System.out.println(fecha_fin);
 
+		//coordenadas
 		double lat=40.4205122;
 		double lon=-3.6641961;
 		try {
+
 			URL url = new URL("https://api.open-meteo.com/v1/gfs?latitude="+lat+"&longitude="+lon+"&hourly=temperature_2m&daily=weathercode,temperature_2m_max,temperature_2m_min,precipitation_sum,snowfall_sum,precipitation_hours,windspeed_10m_max&current_weather=true&start_date="+fecha_actual+"&end_date="+fecha_fin+"&timezone=auto");
 			HttpURLConnection conexion = (HttpURLConnection) url.openConnection(); //crea objeto de conexion
 			conexion.setRequestMethod("GET"); //Metodo de conexion
 			conexion.connect(); //conexion
 
-			int respuestaAPI = conexion.getResponseCode();
+			int respuestaAPI = conexion.getResponseCode(); //respuesta de la API
 
 
 			if(respuestaAPI != 200) {
@@ -116,8 +118,8 @@ public class PI2 {
 		Info_prob_lluvia.setFont(new Font("Dubai", Font.BOLD, 13));
 		Info_prob_lluvia.setBounds(133, 190, 50, 30);
 		panel_hoy.add(Info_prob_lluvia);
-	
-		
+
+
 		JLabel Info_nieve = new JLabel();
 		Info_nieve.setText("0.0");
 		Info_nieve.setFont(new Font("Dubai", Font.BOLD, 13));
@@ -145,7 +147,7 @@ public class PI2 {
 		Descripcion_tiempo.setFont(new Font("Dubai", Font.BOLD, 16));
 		Descripcion_tiempo.setBounds(274, 105, 145, 14);
 		panel_hoy.add(Descripcion_tiempo);
-		
+
 		JLabel temp_hor_0 = new JLabel("New label");
 		temp_hor_0.setFont(new Font("Dubai", Font.BOLD, 12));
 		temp_hor_0.setBounds(99, 11, 79, 14);
@@ -270,7 +272,7 @@ public class PI2 {
 		temp_hor_24.setFont(new Font("Dubai", Font.BOLD, 12));
 		temp_hor_24.setBounds(332, 261, 79, 14);
 		panel_horas.add(temp_hor_24);
-		
+
 		JLabel fecha1 = new JLabel("New label");
 		fecha1.setFont(new Font("Dubai", Font.BOLD, 12));
 		fecha1.setBounds(10, 11, 130, 14);
@@ -362,11 +364,12 @@ public class PI2 {
 		panel_semanal.add(min_temperatura_semanal6);
 
 
-		
-		
+
+		//formatos dias
 		SimpleDateFormat hr = new SimpleDateFormat("yyyy-MM-dd HH:00");
 		SimpleDateFormat di = new SimpleDateFormat("EEEE yyyy-MM-dd");
 
+		//variables para los datos
 		double [] temperatura = new double[192];
 		int cod[] = new int[7];
 		double temperatura_max[]=new double[7];	
@@ -377,8 +380,9 @@ public class PI2 {
 		double vient[]=new double[7];
 
 
-		String [] fecha = new String[192];
+		String [] fecha = new String[192]; //String de los dias y horas
 
+		//Del objeto JSON desfragmenta en diferentes datos
 		JSONArray dias = ob.getJSONObject("hourly").getJSONArray("time");
 		JSONArray temp = ob.getJSONObject("hourly").getJSONArray("temperature_2m");
 		JSONArray codigo = ob.getJSONObject("daily").getJSONArray("weathercode");
@@ -391,8 +395,8 @@ public class PI2 {
 
 		for (int i = 0; i < dias.length(); i++) {
 
-			temperatura[i]= temp.getDouble(i);
-			fecha[i]=dias.getString(i).replace("T"," ");
+			temperatura[i]= temp.getDouble(i); //guarda la temperatura por horas en un array
+			fecha[i]=dias.getString(i).replace("T"," "); //guarda las fechas de las temperaturas
 
 		}
 
@@ -405,24 +409,26 @@ public class PI2 {
 			c.setTime(dia);
 			c.add(Calendar.DATE, z);
 			dia = c.getTime();
-			dias_semana[z]=hr.format(dia);
-			dias_semana_sin_horas[z]=di.format(dia);
+			dias_semana[z]=hr.format(dia); //Se crea un array de los 7 dias de la semana en la misma hora que nos encontramos
+			dias_semana_sin_horas[z]=di.format(dia); //Se crea un array de los 7 dias de la semana sin hora
 		}
 
 		for(int i = 0;i<=6;i++) {
-			cod[i]=codigo.getInt(i);
+			//bucle para obtener datos que no dependen de la hora sino que son diarios
+			cod[i]=codigo.getInt(i); //weather code
 			temperatura_max[i]=temp_max.getDouble(i);
 			temperatura_min[i]=temp_min.getDouble(i);
-			lluv[i]=lluvia.getDouble(i);
-			hor_lluv[i]=hora_lluvia.getDouble(i);
-			niev[i]=nieve.getDouble(i);
-			vient[i]=viento.getDouble(i);
+			lluv[i]=lluvia.getDouble(i);//luvia
+			hor_lluv[i]=hora_lluvia.getDouble(i);//hora que va a llover
+			niev[i]=nieve.getDouble(i);//nieve
+			vient[i]=viento.getDouble(i);//viento
 		}
 
-
+		//De aqui al final de la función se establecen los datos en la interfaz grafica
 		for (int i = 0; i < dias.length(); i++) {
 
-			if(fecha[i].equals(dias_semana[0])) {
+			if(fecha[i].equals(dias_semana[0])) { 
+				//Si la fecha (las fechas y horas  de las temperaturas por horas) == al PRIMER dia y hora (por lo tanto hoy a esta misma hora)  que nos encontramos
 				Temperatura_hor.setText(String.valueOf(temperatura[i])+ " ºC");
 				max_temperatura.setText(String.valueOf(temperatura_max[0])+ " ºC");
 				min_temperatura.setText(String.valueOf(temperatura_min[0])+ " ºC");
@@ -432,7 +438,7 @@ public class PI2 {
 				Info_nieve.setText(String.valueOf(niev[0]) + " cm");
 			}
 		}//fin del bucle
-		
+		//temperaturas por horas pero solo se ponen las 24 primeras (24horas)
 		temp_hor_0.setText(String.valueOf(temperatura[0])+ " ºC");
 		temp_hor_1.setText(String.valueOf(temperatura[1])+ " ºC");
 		temp_hor_2.setText(String.valueOf(temperatura[2])+ " ºC");
@@ -458,7 +464,7 @@ public class PI2 {
 		temp_hor_22.setText(String.valueOf(temperatura[22])+ " ºC");
 		temp_hor_23.setText(String.valueOf(temperatura[23])+ " ºC");
 		temp_hor_24.setText(String.valueOf(temperatura[24])+ " ºC");
-		
+		//fecha proximas (6 dias siguientes)
 		fecha1.setText(dias_semana_sin_horas[1]);
 		fecha2.setText(dias_semana_sin_horas[2]);
 		fecha3.setText(dias_semana_sin_horas[3]);
@@ -466,13 +472,14 @@ public class PI2 {
 		fecha5.setText(dias_semana_sin_horas[5]);
 		fecha6.setText(dias_semana_sin_horas[6]);
 
+		//Temperatura max y min de las fechas proximas
 		max_temperatura_semanal1.setText(String.valueOf(temperatura_max[1]));
 		max_temperatura_semanal2.setText(String.valueOf(temperatura_max[2]));
 		max_temperatura_semanal3.setText(String.valueOf(temperatura_max[3]));
 		max_temperatura_semanal4.setText(String.valueOf(temperatura_max[4]));
 		max_temperatura_semanal5.setText(String.valueOf(temperatura_max[5]));
 		max_temperatura_semanal6.setText(String.valueOf(temperatura_max[6]));
-		
+
 		min_temperatura_semanal1.setText(String.valueOf(temperatura_min[1]));
 		min_temperatura_semanal2.setText(String.valueOf(temperatura_min[2]));
 		min_temperatura_semanal3.setText(String.valueOf(temperatura_min[3]));
@@ -501,16 +508,16 @@ public class PI2 {
 
 	public static void main(String[] args) {
 		System.setProperty("sun.java2d.uiScale", "100%"); // establece la escala de texto,imagenes y APP independientemente de la escala del OS 
-		
-		JFrame interfaz = new JFrame();
+
+		JFrame interfaz = new JFrame();//frame
 
 		try {
-			UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
+			UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");//forma en la que se ve el programa dependiendo del OS
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
 
-
+		//parametros de interfaz asi como labels,etc.
 		interfaz.setAlwaysOnTop(true);
 		interfaz.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		interfaz.setBounds(100, 100, 450, 500);
@@ -535,24 +542,24 @@ public class PI2 {
 		JPanel panel_hoy = new JPanel();
 		tabbedPane.addTab("HOY", null, panel_hoy, null);
 		panel_hoy.setLayout(null);
-		
+
 		JPanel panel_horas = new JPanel();
 		tabbedPane.addTab("TEMPERATURAS POR HORAS", null, panel_horas, null);
 		panel_horas.setLayout(null);
-		
+
 		JPanel panel_semanal = new JPanel();
 		tabbedPane.addTab("TEMPERATURAS PRÓXIMAS", null, panel_semanal, null);
 		panel_semanal.setLayout(null);
-		
+
 		//panel 
-		
+
 		JLabel Titulo = new JLabel("ClimaTowers");
 		Titulo.setFont(new Font("Dubai", Font.BOLD, 28));
 		Titulo.setBounds(10, 11, 154, 26);
 		panel.add(Titulo);
 
 		//panel_hoy
-		
+
 		JLabel Imagen_viento = new JLabel(new ImageIcon("Imagenes/icono_viento.png"));
 		Imagen_viento.setBounds(35, 160, 30, 30);
 		panel_hoy.add(Imagen_viento);
@@ -560,8 +567,8 @@ public class PI2 {
 		JLabel Imagen_prob_lluvia = new JLabel(new ImageIcon("Imagenes/lluvia_icono.png"));
 		Imagen_prob_lluvia.setBounds(133, 160, 30, 30);
 		panel_hoy.add(Imagen_prob_lluvia);
-		
-		
+
+
 		JLabel Imagen_nieve = new JLabel(new ImageIcon("Imagenes/nieve_icono.png"));
 		Imagen_nieve.setBounds(233, 160, 30, 30);
 		panel_hoy.add(Imagen_nieve);
@@ -573,8 +580,8 @@ public class PI2 {
 		JLabel Imagen_maxmin = new JLabel(new ImageIcon("Imagenes/maxmin_icono.png"));
 		Imagen_maxmin.setBounds(123, 45, 50, 50);
 		panel_hoy.add(Imagen_maxmin);
-		
-		
+
+
 		//panel horas
 
 		JLabel hor0 = new JLabel("00:00");
@@ -703,7 +710,7 @@ public class PI2 {
 		panel_horas.add(hor0_24);
 
 		//panel semanal
-	
+
 
 		JLabel semanal_max1 = new JLabel("MAX");
 		semanal_max1.setFont(new Font("Dubai", Font.BOLD, 14));
@@ -764,15 +771,15 @@ public class PI2 {
 		semanal_min6.setFont(new Font("Dubai", Font.BOLD, 14));
 		semanal_min6.setBounds(373, 346, 46, 14);
 		panel_semanal.add(semanal_min6);
-		
+
 		//se activan funciones
-		
-		String informacionAPI = llamada();
-		JSONObject ob = new JSONObject(informacionAPI);
-		desfragmentacion(informacionAPI,ob, panel_hoy, panel_horas, panel_semanal);
-		
+
+		String informacionAPI = llamada(); //llama a la API
+		JSONObject ob = new JSONObject(informacionAPI); //se convierte en objeto la respuesta de la API
+		desfragmentacion(informacionAPI,ob, panel_hoy, panel_horas, panel_semanal);//se desfragmenta y se representa en la interfaz
+
 		//fondos panel_hoy
-		
+
 		JLabel Imagen_fondo = new JLabel(new ImageIcon("Imagenes/cuadrado.png"));
 		Imagen_fondo.setBackground(Color.WHITE);
 		Imagen_fondo.setForeground(Color.WHITE);
@@ -790,9 +797,9 @@ public class PI2 {
 		Recomendaciones_fondo.setBackground(Color.WHITE);
 		Recomendaciones_fondo.setBounds(10, 244, 409, 130);
 		panel_hoy.add(Recomendaciones_fondo);
-		
+
 		//fondos panel_semanal
-		
+
 		JLabel fondo_tiempo0 = new JLabel(new ImageIcon("Imagenes/cuadrado.png"));
 		fondo_tiempo0.setBounds(10, 11, 409, 51);
 		panel_semanal.add(fondo_tiempo0);
@@ -816,12 +823,12 @@ public class PI2 {
 		JLabel fondo_tiempo5 = new JLabel(new ImageIcon("Imagenes/cuadrado.png"));
 		fondo_tiempo5.setBounds(10, 321, 409, 51);
 		panel_semanal.add(fondo_tiempo5);
-		
+
 		//interfaz visible
-		
+
 		interfaz.setVisible(true);
-		
-		
+
+
 
 
 
