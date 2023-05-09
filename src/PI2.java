@@ -33,8 +33,8 @@ public class PI2 {
 		//System.out.println(fecha_actual);
 		//System.out.println(fecha_fin);
 
-		double lat=40.41;
-		double lon=-3.7;
+		double lat=40.4205122;
+		double lon=-3.6641961;
 		try {
 			URL url = new URL("https://api.open-meteo.com/v1/gfs?latitude="+lat+"&longitude="+lon+"&hourly=temperature_2m&daily=weathercode,temperature_2m_max,temperature_2m_min,precipitation_sum,snowfall_sum,precipitation_hours,windspeed_10m_max&current_weather=true&start_date="+fecha_actual+"&end_date="+fecha_fin+"&timezone=auto");
 			HttpURLConnection conexion = (HttpURLConnection) url.openConnection(); //crea objeto de conexion
