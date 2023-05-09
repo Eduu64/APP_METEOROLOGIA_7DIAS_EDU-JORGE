@@ -143,6 +143,7 @@ public class PI2 {
 
 
 	public static void main(String[] args) {
+		System.setProperty("sun.java2d.uiScale", "100%"); // establece la escala de texto,imagenes y APP independientemente de la escala del OS 
 		GUI interfaz = new GUI();
 		interfaz.setVisible(true);
 		String informacionAPI = llamada();

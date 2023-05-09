@@ -7,7 +7,6 @@ public class GUI extends JFrame{
 	
 	public GUI(){
 		
-			System.setProperty("sun.java2d.uiScale", "100%"); // establece la escala de texto,imagenes y APP independientemente de la escala del OS 
 			try {
 				UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
 			}catch(Exception e) {
