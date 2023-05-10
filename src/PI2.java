@@ -1,5 +1,4 @@
 import java.awt.Color;
-
 import java.awt.Font;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -92,43 +91,43 @@ public class PI2 {
 		JLabel Recomendaciones = new JLabel("New label");
 		Recomendaciones.setFont(new Font("Dubai", Font.BOLD, 12));
 		Recomendaciones.setVerticalAlignment(SwingConstants.TOP);
-		Recomendaciones.setBounds(10, 245, 409, 36);
+		Recomendaciones.setBounds(14, 237, 409, 36);
 		panel_hoy.add(Recomendaciones);
 
 		JLabel Recomendaciones1 = new JLabel("New label");
 		Recomendaciones1.setFont(new Font("Dubai", Font.BOLD, 12));
 		Recomendaciones1.setVerticalAlignment(SwingConstants.TOP);
-		Recomendaciones1.setBounds(10, 291, 409, 36);
+		Recomendaciones1.setBounds(14, 280, 409, 36);
 		panel_hoy.add(Recomendaciones1);
 
 		JLabel Recomendaciones2 = new JLabel("New label");
 		Recomendaciones2.setFont(new Font("Dubai", Font.BOLD, 12));
 		Recomendaciones2.setVerticalAlignment(SwingConstants.TOP);
-		Recomendaciones2.setBounds(10, 338, 409, 36);
+		Recomendaciones2.setBounds(14, 320, 409, 36);
 		panel_hoy.add(Recomendaciones2);
 
 
 		JLabel Info_viento = new JLabel();
 		Info_viento.setFont(new Font("Dubai", Font.BOLD, 13));
-		Info_viento.setBounds(25, 190, 54, 30);
+		Info_viento.setBounds(25, 185, 54, 30);
 		panel_hoy.add(Info_viento);
 
 
 		JLabel Info_prob_lluvia = new JLabel();
 		Info_prob_lluvia.setFont(new Font("Dubai", Font.BOLD, 13));
-		Info_prob_lluvia.setBounds(133, 190, 50, 30);
+		Info_prob_lluvia.setBounds(133, 185, 50, 30);
 		panel_hoy.add(Info_prob_lluvia);
 
 
 		JLabel Info_nieve = new JLabel();
 		Info_nieve.setText("0.0");
 		Info_nieve.setFont(new Font("Dubai", Font.BOLD, 13));
-		Info_nieve.setBounds(237, 190, 50, 30);
+		Info_nieve.setBounds(237, 185, 50, 30);
 		panel_hoy.add(Info_nieve);
 
 		JLabel Info_hora_lluvia = new JLabel();
 		Info_hora_lluvia.setFont(new Font("Dubai", Font.BOLD, 13));
-		Info_hora_lluvia.setBounds(340, 190, 45, 30);
+		Info_hora_lluvia.setBounds(340, 185, 45, 30);
 		panel_hoy.add(Info_hora_lluvia);
 
 
@@ -464,6 +463,7 @@ public class PI2 {
 		temp_hor_22.setText(String.valueOf(temperatura[22])+ " ºC");
 		temp_hor_23.setText(String.valueOf(temperatura[23])+ " ºC");
 		temp_hor_24.setText(String.valueOf(temperatura[24])+ " ºC");
+
 		//fecha proximas (6 dias siguientes)
 		fecha1.setText(dias_semana_sin_horas[1]);
 		fecha2.setText(dias_semana_sin_horas[2]);
@@ -486,21 +486,6 @@ public class PI2 {
 		min_temperatura_semanal4.setText(String.valueOf(temperatura_min[4]));
 		min_temperatura_semanal5.setText(String.valueOf(temperatura_min[5]));
 		min_temperatura_semanal6.setText(String.valueOf(temperatura_min[6]));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	}
 
@@ -540,14 +525,17 @@ public class PI2 {
 		contentPane.add(tabbedPane);
 
 		JPanel panel_hoy = new JPanel();
+		panel_hoy.setBackground(Color.WHITE);
 		tabbedPane.addTab("HOY", null, panel_hoy, null);
 		panel_hoy.setLayout(null);
 
 		JPanel panel_horas = new JPanel();
+		panel_horas.setBackground(Color.WHITE);
 		tabbedPane.addTab("TEMPERATURAS POR HORAS", null, panel_horas, null);
 		panel_horas.setLayout(null);
 
 		JPanel panel_semanal = new JPanel();
+		panel_semanal.setBackground(Color.WHITE);
 		tabbedPane.addTab("TEMPERATURAS PRÓXIMAS", null, panel_semanal, null);
 		panel_semanal.setLayout(null);
 
@@ -561,20 +549,20 @@ public class PI2 {
 		//panel_hoy
 
 		JLabel Imagen_viento = new JLabel(new ImageIcon("Imagenes/icono_viento.png"));
-		Imagen_viento.setBounds(35, 160, 30, 30);
+		Imagen_viento.setBounds(35, 155, 30, 30);
 		panel_hoy.add(Imagen_viento);
 
 		JLabel Imagen_prob_lluvia = new JLabel(new ImageIcon("Imagenes/lluvia_icono.png"));
-		Imagen_prob_lluvia.setBounds(133, 160, 30, 30);
+		Imagen_prob_lluvia.setBounds(139, 155, 30, 30);
 		panel_hoy.add(Imagen_prob_lluvia);
 
 
 		JLabel Imagen_nieve = new JLabel(new ImageIcon("Imagenes/nieve_icono.png"));
-		Imagen_nieve.setBounds(233, 160, 30, 30);
+		Imagen_nieve.setBounds(241, 155, 30, 30);
 		panel_hoy.add(Imagen_nieve);
 
 		JLabel Imagen_hor_lluvia = new JLabel(new ImageIcon("Imagenes/hora_lluvia_icono.png"));
-		Imagen_hor_lluvia.setBounds(340, 160, 30, 30);
+		Imagen_hor_lluvia.setBounds(340, 155, 30, 30);
 		panel_hoy.add(Imagen_hor_lluvia);
 
 		JLabel Imagen_maxmin = new JLabel(new ImageIcon("Imagenes/maxmin_icono.png"));
@@ -789,13 +777,13 @@ public class PI2 {
 		JLabel Imagen_fondo_1 = new JLabel(new ImageIcon("Imagenes/cuadrado.png"));
 		Imagen_fondo_1.setForeground(Color.WHITE);
 		Imagen_fondo_1.setBackground(Color.WHITE);
-		Imagen_fondo_1.setBounds(10, 147, 409, 86);
+		Imagen_fondo_1.setBounds(10, 138, 409, 86);
 		panel_hoy.add(Imagen_fondo_1);
 
 		JLabel Recomendaciones_fondo = new JLabel(new ImageIcon("Imagenes/cuadrado.png"));
 		Recomendaciones_fondo.setForeground(Color.WHITE);
 		Recomendaciones_fondo.setBackground(Color.WHITE);
-		Recomendaciones_fondo.setBounds(10, 244, 409, 130);
+		Recomendaciones_fondo.setBounds(10, 235, 409, 127);
 		panel_hoy.add(Recomendaciones_fondo);
 
 		//fondos panel_semanal
