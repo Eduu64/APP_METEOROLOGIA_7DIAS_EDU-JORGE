@@ -505,7 +505,7 @@ public class PI2 {
 		//parametros de interfaz asi como labels,etc.
 		interfaz.setAlwaysOnTop(true);
 		interfaz.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		interfaz.setBounds(100, 100, 450, 500);
+		interfaz.setBounds(100, 100, 450, 507);
 		JPanel contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
@@ -518,7 +518,7 @@ public class PI2 {
 		panel.setLayout(null);
 
 		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
-		tabbedPane.setBounds(0, 48, 434, 413);
+		tabbedPane.setBounds(0, 48, 434, 420);
 		tabbedPane.setFont(new Font("Dubai", Font.BOLD, 12));
 		tabbedPane.setBorder(null); // quita bordes
 		tabbedPane.setFocusable(false); // quita bordes
