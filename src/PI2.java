@@ -79,7 +79,7 @@ public class PI2 {
 	public static void desfragmentacion(String info, JSONObject ob, JPanel panel_hoy, JPanel panel_horas, JPanel panel_semanal) {
 
 		JLabel Imagen_Tiempo = new JLabel();
-		Imagen_Tiempo.setBounds(313, 28, 80, 80);
+		Imagen_Tiempo.setBounds(297, 20, 90, 90);
 		panel_hoy.add(Imagen_Tiempo);
 
 		JLabel Temperatura_hor = new JLabel();
@@ -141,10 +141,10 @@ public class PI2 {
 		min_temperatura.setBounds(183, 80, 46, 14);
 		panel_hoy.add(min_temperatura);
 
-		JLabel Descripcion_tiempo = new JLabel("Despejado");
+		JLabel Descripcion_tiempo = new JLabel();
 		Descripcion_tiempo.setHorizontalAlignment(SwingConstants.CENTER);
 		Descripcion_tiempo.setFont(new Font("Dubai", Font.BOLD, 16));
-		Descripcion_tiempo.setBounds(274, 105, 145, 14);
+		Descripcion_tiempo.setBounds(270, 105, 145, 14);
 		panel_hoy.add(Descripcion_tiempo);
 
 		JLabel temp_hor_0 = new JLabel("New label");
@@ -435,8 +435,168 @@ public class PI2 {
 				Info_prob_lluvia.setText(String.valueOf(lluv[0])+ " mm");
 				Info_hora_lluvia.setText(String.valueOf(hor_lluv[0])+ " h");
 				Info_nieve.setText(String.valueOf(niev[0]) + " cm");
+
 			}
 		}//fin del bucle
+		try {
+			ImageIcon icono = new ImageIcon(); 
+			switch(cod[0]) {
+			case 0:
+				Descripcion_tiempo.setText("Despejado");
+				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/01d@2x.png")); 
+				Imagen_Tiempo.setIcon(icono);
+				break;
+			case 1:
+				Descripcion_tiempo.setText("Semidespejado");
+				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/01d@2x.png")); 
+				Imagen_Tiempo.setIcon(icono);
+				break;
+			case 2:
+				Descripcion_tiempo.setText("Seminublado");
+				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/02d@2x.png")); 
+				Imagen_Tiempo.setIcon(icono);
+				break;
+			case 3:
+				Descripcion_tiempo.setText("Nublado");
+				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/03d@2x.png")); 
+				Imagen_Tiempo.setIcon(icono);
+				break;
+			case 45:
+				Descripcion_tiempo.setText("Nebuloso");
+				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/50d@2x.png")); 
+				Imagen_Tiempo.setIcon(icono);
+				break;
+			case 48:
+				Descripcion_tiempo.setText("Nebuloso");
+				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/50d@2x.png")); 
+				Imagen_Tiempo.setIcon(icono);
+				break;
+			case 51:
+				Descripcion_tiempo.setText("Llovizna leve");
+				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/09d@2x.png")); 
+				Imagen_Tiempo.setIcon(icono);
+				break;
+			case 53:
+				Descripcion_tiempo.setText("LLovizna");
+				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/09d@2x.png")); 
+				Imagen_Tiempo.setIcon(icono);
+				break;
+			case 55:
+				Descripcion_tiempo.setText("Gran LLovizna");
+				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/09d@2x.png")); 
+				Imagen_Tiempo.setIcon(icono);
+				break;
+			case 56:
+				Descripcion_tiempo.setText("Llovizna helada");
+				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/09d@2x.png")); 
+				Imagen_Tiempo.setIcon(icono);
+				break;
+			case 57:
+				Descripcion_tiempo.setText("Llovizna helada");
+				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/09d@2x.png")); 
+				Imagen_Tiempo.setIcon(icono);
+				break;
+			case 61:
+				Descripcion_tiempo.setText("Lluvia leve");
+				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/10d@2x.png")); 
+				Imagen_Tiempo.setIcon(icono);
+				break;
+			case 63:
+				Descripcion_tiempo.setText("Lluvia");
+				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/10d@2x.png")); 
+				Imagen_Tiempo.setIcon(icono);
+				break;
+			case 65:
+				Descripcion_tiempo.setText("Lluvia fuerte");
+				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/10d@2x.png")); 
+				Imagen_Tiempo.setIcon(icono);
+				break;
+			case 66:
+				Descripcion_tiempo.setText("LLuvia helada");
+				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/10d@2x.png")); 
+				Imagen_Tiempo.setIcon(icono);
+				break;
+			case 67:
+				Descripcion_tiempo.setText("Lluvia helada");
+				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/10d@2x.png"));
+				Imagen_Tiempo.setIcon(icono);
+				break;
+			case 71:
+				Descripcion_tiempo.setText("Nieve leve");
+				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/13d@2x.png"));
+				Imagen_Tiempo.setIcon(icono);
+				break;
+			case 73:
+				Descripcion_tiempo.setText("Nieve");
+				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/13d@2x.png"));
+				Imagen_Tiempo.setIcon(icono);
+				break;
+			case 75:
+				Descripcion_tiempo.setText("Nieve fuerte");
+				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/13d@2x.png"));
+				Imagen_Tiempo.setIcon(icono);
+				break;
+			case 77:
+				Descripcion_tiempo.setText("Copos de nieve");
+				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/13d@2x.png"));
+				Imagen_Tiempo.setIcon(icono);
+				break;
+			case 80:
+				Descripcion_tiempo.setText("Chispea leve");
+				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/09d@2x.png"));
+				Imagen_Tiempo.setIcon(icono);
+				break;
+			case 81:
+				Descripcion_tiempo.setText("Chispea");
+				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/09d@2x.png"));
+				Imagen_Tiempo.setIcon(icono);
+				break;
+			case 82:
+				Descripcion_tiempo.setText("Chispea fuerte");
+				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/09d@2x.png"));
+				Imagen_Tiempo.setIcon(icono);
+				break;
+			case 85:
+				Descripcion_tiempo.setText("Chispea nieve");
+				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/13d@2x.png"));
+				Imagen_Tiempo.setIcon(icono);
+				break;
+			case 86:
+				Descripcion_tiempo.setText("Chispea nieve");
+				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/13d@2x.png"));
+				Imagen_Tiempo.setIcon(icono);
+				break;
+			case 95:
+				Descripcion_tiempo.setText("Tormenta electrica");
+				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/11d@2x.png"));
+				Imagen_Tiempo.setIcon(icono);
+				break;
+			case 96:
+				Descripcion_tiempo.setText("Tormenta granizada");
+				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/11d@2x.png"));
+				Imagen_Tiempo.setIcon(icono);
+				break;
+			case 99:
+				Descripcion_tiempo.setText("Tormenta granizada");
+				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/11d@2x.png"));
+				Imagen_Tiempo.setIcon(icono);
+				break;
+			default:
+				// Código por defecto si el código no está en la lista
+				break;
+
+
+
+
+
+
+
+			}
+
+		}catch(Exception e) {
+			System.out.println(e);
+		}
+
 		//temperaturas por horas pero solo se ponen las 24 primeras (24horas)
 		temp_hor_0.setText(String.valueOf(temperatura[0])+ " ºC");
 		temp_hor_1.setText(String.valueOf(temperatura[1])+ " ºC");
