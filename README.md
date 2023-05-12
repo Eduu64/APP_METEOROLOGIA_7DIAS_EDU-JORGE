@@ -1,8 +1,5 @@
 # APP de METEOROLOGIA de 7 DIAS AUTORES: EDU y JORGE
 
-## Instrucciones
-* Añadir coordenadas
-
 ## Dependencias
 * Json para Java
  
