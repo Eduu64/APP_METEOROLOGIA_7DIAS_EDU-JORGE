@@ -109,7 +109,7 @@ public class PI2 {
 
 		JLabel Info_viento = new JLabel();
 		Info_viento.setFont(new Font("Dubai", Font.BOLD, 13));
-		Info_viento.setBounds(25, 185, 54, 30);
+		Info_viento.setBounds(25, 185, 60, 30);
 		panel_hoy.add(Info_viento);
 
 
@@ -304,69 +304,211 @@ public class PI2 {
 
 		JLabel max_temperatura_semanal1 = new JLabel();
 		max_temperatura_semanal1.setFont(new Font("Dubai", Font.BOLD, 14));
-		max_temperatura_semanal1.setBounds(317, 16, 46, 14);
+		max_temperatura_semanal1.setBounds(330, 16, 46, 14);
 		panel_semanal.add(max_temperatura_semanal1);
 
 		JLabel max_temperatura_semanal2 = new JLabel();
 		max_temperatura_semanal2.setFont(new Font("Dubai", Font.BOLD, 14));
-		max_temperatura_semanal2.setBounds(317, 78, 46, 14);
+		max_temperatura_semanal2.setBounds(330, 78, 46, 14);
 		panel_semanal.add(max_temperatura_semanal2);
 
 		JLabel max_temperatura_semanal3 = new JLabel();
 		max_temperatura_semanal3.setFont(new Font("Dubai", Font.BOLD, 14));
-		max_temperatura_semanal3.setBounds(317, 140, 46, 14);
+		max_temperatura_semanal3.setBounds(330, 140, 46, 14);
 		panel_semanal.add(max_temperatura_semanal3);
 
 		JLabel max_temperatura_semanal4 = new JLabel();
 		max_temperatura_semanal4.setFont(new Font("Dubai", Font.BOLD, 14));
-		max_temperatura_semanal4.setBounds(317, 202, 46, 14);
+		max_temperatura_semanal4.setBounds(330, 202, 46, 14);
 		panel_semanal.add(max_temperatura_semanal4);
 
 		JLabel max_temperatura_semanal5 = new JLabel();
 		max_temperatura_semanal5.setFont(new Font("Dubai", Font.BOLD, 14));
-		max_temperatura_semanal5.setBounds(317, 264, 46, 14);
+		max_temperatura_semanal5.setBounds(330, 264, 46, 14);
 		panel_semanal.add(max_temperatura_semanal5);
 
 		JLabel max_temperatura_semanal6 = new JLabel();
 		max_temperatura_semanal6.setFont(new Font("Dubai", Font.BOLD, 14));
-		max_temperatura_semanal6.setBounds(317, 326, 46, 14);
+		max_temperatura_semanal6.setBounds(330, 326, 46, 14);
 		panel_semanal.add(max_temperatura_semanal6);
 
 		JLabel min_temperatura_semanal1 = new JLabel();
 		min_temperatura_semanal1.setFont(new Font("Dubai", Font.BOLD, 14));
-		min_temperatura_semanal1.setBounds(317, 36, 46, 14);
+		min_temperatura_semanal1.setBounds(330, 36, 46, 14);
 		panel_semanal.add(min_temperatura_semanal1);
 
 		JLabel min_temperatura_semanal2 = new JLabel();
 		min_temperatura_semanal2.setFont(new Font("Dubai", Font.BOLD, 14));
-		min_temperatura_semanal2.setBounds(317, 98, 46, 14);
+		min_temperatura_semanal2.setBounds(330, 98, 46, 14);
 		panel_semanal.add(min_temperatura_semanal2);
 
 		JLabel min_temperatura_semanal3 = new JLabel();
 		min_temperatura_semanal3.setFont(new Font("Dubai", Font.BOLD, 14));
-		min_temperatura_semanal3.setBounds(317, 160, 46, 14);
+		min_temperatura_semanal3.setBounds(330, 160, 46, 14);
 		panel_semanal.add(min_temperatura_semanal3);
 
 		JLabel min_temperatura_semanal4 = new JLabel();
 		min_temperatura_semanal4.setFont(new Font("Dubai", Font.BOLD, 14));
-		min_temperatura_semanal4.setBounds(317, 222, 46, 14);
+		min_temperatura_semanal4.setBounds(330, 222, 46, 14);
 		panel_semanal.add(min_temperatura_semanal4);
 
 		JLabel min_temperatura_semanal5 = new JLabel();
 		min_temperatura_semanal5.setFont(new Font("Dubai", Font.BOLD, 14));
-		min_temperatura_semanal5.setBounds(317, 284, 46, 14);
+		min_temperatura_semanal5.setBounds(330, 284, 46, 14);
 		panel_semanal.add(min_temperatura_semanal5);
 
 		JLabel min_temperatura_semanal6 = new JLabel();
 		min_temperatura_semanal6.setFont(new Font("Dubai", Font.BOLD, 14));
-		min_temperatura_semanal6.setBounds(317, 346, 46, 14);
+		min_temperatura_semanal6.setBounds(330, 346, 46, 14);
 		panel_semanal.add(min_temperatura_semanal6);
 
+		JLabel viento_semanal = new JLabel("24 km/h");
+		viento_semanal.setFont(new Font("Dubai", Font.BOLD, 10));
+		viento_semanal.setBounds(175, 36, 46, 14);
+		panel_semanal.add(viento_semanal);
 
+		JLabel prob_semanal = new JLabel("24 mm");
+		prob_semanal.setFont(new Font("Dubai", Font.BOLD, 10));
+		prob_semanal.setBounds(222, 36, 46, 14);
+		panel_semanal.add(prob_semanal);
+
+		JLabel nieve_semanal = new JLabel("24 cm");
+		nieve_semanal.setFont(new Font("Dubai", Font.BOLD, 10));
+		nieve_semanal.setBounds(258, 36, 46, 14);
+		panel_semanal.add(nieve_semanal);
+
+		JLabel hor_semanal = new JLabel("0.0 h");
+		hor_semanal.setFont(new Font("Dubai", Font.BOLD, 10));
+		hor_semanal.setBounds(295, 36, 46, 14);
+		panel_semanal.add(hor_semanal);
+
+		JLabel viento_semanal2 = new JLabel("22 km/h");
+		viento_semanal2.setFont(new Font("Dubai", Font.BOLD, 10));
+		viento_semanal2.setBounds(175, 98, 46, 14);
+		panel_semanal.add(viento_semanal2);
+
+		JLabel prob_semanal2 = new JLabel("26 mm");
+		prob_semanal2.setFont(new Font("Dubai", Font.BOLD, 10));
+		prob_semanal2.setBounds(222, 98, 46, 14);
+		panel_semanal.add(prob_semanal2);
+
+		JLabel nieve_semanal2 = new JLabel("23 cm");
+		nieve_semanal2.setFont(new Font("Dubai", Font.BOLD, 10));
+		nieve_semanal2.setBounds(258, 98, 46, 14);
+		panel_semanal.add(nieve_semanal2);
+
+		JLabel hor_semanal2 = new JLabel("0.5 h");
+		hor_semanal2.setFont(new Font("Dubai", Font.BOLD, 10));
+		hor_semanal2.setBounds(295, 98, 46, 14);
+		panel_semanal.add(hor_semanal2);
+
+		JLabel viento_semanal3 = new JLabel("24 km/h");
+		viento_semanal3.setFont(new Font("Dubai", Font.BOLD, 10));
+		viento_semanal3.setBounds(175, 160, 46, 14);
+		panel_semanal.add(viento_semanal3);
+
+		JLabel prob_semanal3 = new JLabel("24 mm");
+		prob_semanal3.setFont(new Font("Dubai", Font.BOLD, 10));
+		prob_semanal3.setBounds(222, 160, 46, 14);
+		panel_semanal.add(prob_semanal3);
+
+		JLabel nieve_semanal3 = new JLabel("24 cm");
+		nieve_semanal3.setFont(new Font("Dubai", Font.BOLD, 10));
+		nieve_semanal3.setBounds(258, 160, 46, 14);
+		panel_semanal.add(nieve_semanal3);
+
+		JLabel hor_semanal3 = new JLabel("0.0 h");
+		hor_semanal3.setFont(new Font("Dubai", Font.BOLD, 10));
+		hor_semanal3.setBounds(295, 160, 46, 14);
+		panel_semanal.add(hor_semanal3);
+
+		JLabel viento_semanal4 = new JLabel("24 km/h");
+		viento_semanal4.setFont(new Font("Dubai", Font.BOLD, 10));
+		viento_semanal4.setBounds(175, 222, 46, 14);
+		panel_semanal.add(viento_semanal4);
+
+		JLabel prob_semanal4 = new JLabel("24 mm");
+		prob_semanal4.setFont(new Font("Dubai", Font.BOLD, 10));
+		prob_semanal4.setBounds(222, 222, 46, 14);
+		panel_semanal.add(prob_semanal4);
+
+		JLabel nieve_semanal4 = new JLabel("24 cm");
+		nieve_semanal4.setFont(new Font("Dubai", Font.BOLD, 10));
+		nieve_semanal4.setBounds(258, 222, 46, 14);
+		panel_semanal.add(nieve_semanal4);
+
+		JLabel hor_semanal4 = new JLabel("0.0 h");
+		hor_semanal4.setFont(new Font("Dubai", Font.BOLD, 10));
+		hor_semanal4.setBounds(295, 222, 46, 14);
+		panel_semanal.add(hor_semanal4);
+
+		JLabel viento_semanal5 = new JLabel("24 km/h");
+		viento_semanal5.setFont(new Font("Dubai", Font.BOLD, 10));
+		viento_semanal5.setBounds(175, 284, 46, 14);
+		panel_semanal.add(viento_semanal5);
+
+		JLabel prob_semanal5 = new JLabel("24 mm");
+		prob_semanal5.setFont(new Font("Dubai", Font.BOLD, 10));
+		prob_semanal5.setBounds(222, 284, 46, 14);
+		panel_semanal.add(prob_semanal5);
+
+		JLabel nieve_semanal5 = new JLabel("24 cm");
+		nieve_semanal5.setFont(new Font("Dubai", Font.BOLD, 10));
+		nieve_semanal5.setBounds(258, 284, 46, 14);
+		panel_semanal.add(nieve_semanal5);
+
+		JLabel hor_semanal5 = new JLabel("0.0 h");
+		hor_semanal5.setFont(new Font("Dubai", Font.BOLD, 10));
+		hor_semanal5.setBounds(295, 284, 46, 14);
+		panel_semanal.add(hor_semanal5);
+
+		JLabel viento_semanal6 = new JLabel("24 km/h");
+		viento_semanal6.setFont(new Font("Dubai", Font.BOLD, 10));
+		viento_semanal6.setBounds(175, 346, 46, 14);
+		panel_semanal.add(viento_semanal6);
+
+		JLabel prob_semanal6 = new JLabel("24 mm");
+		prob_semanal6.setFont(new Font("Dubai", Font.BOLD, 10));
+		prob_semanal6.setBounds(222, 346, 46, 14);
+		panel_semanal.add(prob_semanal6);
+
+		JLabel nieve_semanal6 = new JLabel("24 cm");
+		nieve_semanal6.setFont(new Font("Dubai", Font.BOLD, 10));
+		nieve_semanal6.setBounds(258, 346, 46, 14);
+		panel_semanal.add(nieve_semanal6);
+
+		JLabel hor_semanal6 = new JLabel("0.0 h");
+		hor_semanal6.setFont(new Font("Dubai", Font.BOLD, 10));
+		hor_semanal6.setBounds(295, 346, 46, 14);
+		panel_semanal.add(hor_semanal6);
+
+		JLabel Imagen_Tiempo1 = new JLabel("Imagen");
+		Imagen_Tiempo1.setBounds(80, 10, 85, 55);
+		panel_semanal.add(Imagen_Tiempo1);
+
+		JLabel Imagen_Tiempo2 = new JLabel("Imagen");
+		Imagen_Tiempo2.setBounds(80, 70, 85, 55);
+		panel_semanal.add(Imagen_Tiempo2);
+
+		JLabel Imagen_Tiempo3 = new JLabel("Imagen");
+		Imagen_Tiempo3.setBounds(80, 135, 85, 55);
+		panel_semanal.add(Imagen_Tiempo3);
+
+		JLabel Imagen_Tiempo4 = new JLabel("Imagen");
+		Imagen_Tiempo4.setBounds(80, 195, 85, 55);
+		panel_semanal.add(Imagen_Tiempo4);
+
+		JLabel Imagen_Tiempo5 = new JLabel("Imagen");
+		Imagen_Tiempo5.setBounds(80, 255, 85, 55);
+		panel_semanal.add(Imagen_Tiempo5);
+
+		JLabel Imagen_Tiempo6 = new JLabel("Imagen");
+		Imagen_Tiempo6.setBounds(80, 320, 85, 55);
+		panel_semanal.add(Imagen_Tiempo6);
 
 		//formatos dias
 		SimpleDateFormat hr = new SimpleDateFormat("yyyy-MM-dd HH:00");
-		SimpleDateFormat di = new SimpleDateFormat("EEEE yyyy-MM-dd");
+		SimpleDateFormat di = new SimpleDateFormat("E yyyy-MM-dd");
 
 		//variables para los datos
 		double [] temperatura = new double[192];
@@ -440,159 +582,713 @@ public class PI2 {
 		}//fin del bucle
 		try {
 			ImageIcon icono = new ImageIcon(); 
-			switch(cod[0]) {
-			case 0:
-				Descripcion_tiempo.setText("Despejado");
-				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/01d@2x.png")); 
-				Imagen_Tiempo.setIcon(icono);
-				break;
-			case 1:
-				Descripcion_tiempo.setText("Semidespejado");
-				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/01d@2x.png")); 
-				Imagen_Tiempo.setIcon(icono);
-				break;
-			case 2:
-				Descripcion_tiempo.setText("Seminublado");
-				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/02d@2x.png")); 
-				Imagen_Tiempo.setIcon(icono);
-				break;
-			case 3:
-				Descripcion_tiempo.setText("Nublado");
-				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/03d@2x.png")); 
-				Imagen_Tiempo.setIcon(icono);
-				break;
-			case 45:
-				Descripcion_tiempo.setText("Nebuloso");
-				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/50d@2x.png")); 
-				Imagen_Tiempo.setIcon(icono);
-				break;
-			case 48:
-				Descripcion_tiempo.setText("Nebuloso");
-				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/50d@2x.png")); 
-				Imagen_Tiempo.setIcon(icono);
-				break;
-			case 51:
-				Descripcion_tiempo.setText("Llovizna leve");
-				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/09d@2x.png")); 
-				Imagen_Tiempo.setIcon(icono);
-				break;
-			case 53:
-				Descripcion_tiempo.setText("LLovizna");
-				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/09d@2x.png")); 
-				Imagen_Tiempo.setIcon(icono);
-				break;
-			case 55:
-				Descripcion_tiempo.setText("Gran LLovizna");
-				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/09d@2x.png")); 
-				Imagen_Tiempo.setIcon(icono);
-				break;
-			case 56:
-				Descripcion_tiempo.setText("Llovizna helada");
-				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/09d@2x.png")); 
-				Imagen_Tiempo.setIcon(icono);
-				break;
-			case 57:
-				Descripcion_tiempo.setText("Llovizna helada");
-				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/09d@2x.png")); 
-				Imagen_Tiempo.setIcon(icono);
-				break;
-			case 61:
-				Descripcion_tiempo.setText("Lluvia leve");
-				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/10d@2x.png")); 
-				Imagen_Tiempo.setIcon(icono);
-				break;
-			case 63:
-				Descripcion_tiempo.setText("Lluvia");
-				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/10d@2x.png")); 
-				Imagen_Tiempo.setIcon(icono);
-				break;
-			case 65:
-				Descripcion_tiempo.setText("Lluvia fuerte");
-				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/10d@2x.png")); 
-				Imagen_Tiempo.setIcon(icono);
-				break;
-			case 66:
-				Descripcion_tiempo.setText("LLuvia helada");
-				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/10d@2x.png")); 
-				Imagen_Tiempo.setIcon(icono);
-				break;
-			case 67:
-				Descripcion_tiempo.setText("Lluvia helada");
-				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/10d@2x.png"));
-				Imagen_Tiempo.setIcon(icono);
-				break;
-			case 71:
-				Descripcion_tiempo.setText("Nieve leve");
-				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/13d@2x.png"));
-				Imagen_Tiempo.setIcon(icono);
-				break;
-			case 73:
-				Descripcion_tiempo.setText("Nieve");
-				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/13d@2x.png"));
-				Imagen_Tiempo.setIcon(icono);
-				break;
-			case 75:
-				Descripcion_tiempo.setText("Nieve fuerte");
-				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/13d@2x.png"));
-				Imagen_Tiempo.setIcon(icono);
-				break;
-			case 77:
-				Descripcion_tiempo.setText("Copos de nieve");
-				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/13d@2x.png"));
-				Imagen_Tiempo.setIcon(icono);
-				break;
-			case 80:
-				Descripcion_tiempo.setText("Chispea leve");
-				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/09d@2x.png"));
-				Imagen_Tiempo.setIcon(icono);
-				break;
-			case 81:
-				Descripcion_tiempo.setText("Chispea");
-				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/09d@2x.png"));
-				Imagen_Tiempo.setIcon(icono);
-				break;
-			case 82:
-				Descripcion_tiempo.setText("Chispea fuerte");
-				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/09d@2x.png"));
-				Imagen_Tiempo.setIcon(icono);
-				break;
-			case 85:
-				Descripcion_tiempo.setText("Chispea nieve");
-				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/13d@2x.png"));
-				Imagen_Tiempo.setIcon(icono);
-				break;
-			case 86:
-				Descripcion_tiempo.setText("Chispea nieve");
-				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/13d@2x.png"));
-				Imagen_Tiempo.setIcon(icono);
-				break;
-			case 95:
-				Descripcion_tiempo.setText("Tormenta electrica");
-				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/11d@2x.png"));
-				Imagen_Tiempo.setIcon(icono);
-				break;
-			case 96:
-				Descripcion_tiempo.setText("Tormenta granizada");
-				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/11d@2x.png"));
-				Imagen_Tiempo.setIcon(icono);
-				break;
-			case 99:
-				Descripcion_tiempo.setText("Tormenta granizada");
-				icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/11d@2x.png"));
-				Imagen_Tiempo.setIcon(icono);
-				break;
-			default:
-				// Código por defecto si el código no está en la lista
-				break;
-
-
-
-
-
-
-
+			for(int i=0;i<=6;i++) {
+				switch(cod[i]) {
+				case 0:
+					icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/01d@2x.png")); 
+					if(i==0) {
+						Descripcion_tiempo.setText("Despejado");
+						Imagen_Tiempo.setIcon(icono);
+					}
+					if(i==1) {
+						Imagen_Tiempo1.setIcon(icono);
+					}
+					if(i==2) {
+						Imagen_Tiempo2.setIcon(icono);
+					}
+					if(i==3) {
+						Imagen_Tiempo3.setIcon(icono);
+					}
+					if(i==4) {
+						Imagen_Tiempo4.setIcon(icono);
+					}
+					if(i==5) {
+						Imagen_Tiempo5.setIcon(icono);
+					}
+					if(i==6) {
+						Imagen_Tiempo6.setIcon(icono);
+					}
+					break;
+				case 1:
+					icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/01d@2x.png")); 
+					if(i==0) {
+						Descripcion_tiempo.setText("Semidespejado");
+						Imagen_Tiempo.setIcon(icono);
+					}
+					if(i==1) {
+						Imagen_Tiempo1.setIcon(icono);
+					}
+					if(i==2) {
+						Imagen_Tiempo2.setIcon(icono);
+					}
+					if(i==3) {
+						Imagen_Tiempo3.setIcon(icono);
+					}
+					if(i==4) {
+						Imagen_Tiempo4.setIcon(icono);
+					}
+					if(i==5) {
+						Imagen_Tiempo5.setIcon(icono);
+					}
+					if(i==6) {
+						Imagen_Tiempo6.setIcon(icono);
+					}
+					break;
+				case 2:
+					icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/02d@2x.png")); 
+					if(i==0) {
+						Descripcion_tiempo.setText("Seminublado");
+						Imagen_Tiempo.setIcon(icono);
+					}
+					if(i==1) {
+						Imagen_Tiempo1.setIcon(icono);
+					}
+					if(i==2) {
+						Imagen_Tiempo2.setIcon(icono);
+					}
+					if(i==3) {
+						Imagen_Tiempo3.setIcon(icono);
+					}
+					if(i==4) {
+						Imagen_Tiempo4.setIcon(icono);
+					}
+					if(i==5) {
+						Imagen_Tiempo5.setIcon(icono);
+					}
+					if(i==6) {
+						Imagen_Tiempo6.setIcon(icono);
+					}					
+					break;
+				case 3:
+					icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/03d@2x.png")); 
+					if(i==0) {
+						Descripcion_tiempo.setText("Nublado");
+						Imagen_Tiempo.setIcon(icono);
+					}
+					if(i==1) {
+						Imagen_Tiempo1.setIcon(icono);
+					}
+					if(i==2) {
+						Imagen_Tiempo2.setIcon(icono);
+					}
+					if(i==3) {
+						Imagen_Tiempo3.setIcon(icono);
+					}
+					if(i==4) {
+						Imagen_Tiempo4.setIcon(icono);
+					}
+					if(i==5) {
+						Imagen_Tiempo5.setIcon(icono);
+					}
+					if(i==6) {
+						Imagen_Tiempo6.setIcon(icono);
+					}				
+					break;
+				case 45:
+					icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/50d@2x.png")); 
+					if(i==0) {
+						Descripcion_tiempo.setText("Nebuloso");
+						Imagen_Tiempo.setIcon(icono);
+					}
+					if(i==1) {
+						Imagen_Tiempo1.setIcon(icono);
+					}
+					if(i==2) {
+						Imagen_Tiempo2.setIcon(icono);
+					}
+					if(i==3) {
+						Imagen_Tiempo3.setIcon(icono);
+					}
+					if(i==4) {
+						Imagen_Tiempo4.setIcon(icono);
+					}
+					if(i==5) {
+						Imagen_Tiempo5.setIcon(icono);
+					}
+					if(i==6) {
+						Imagen_Tiempo6.setIcon(icono);
+					}	
+					break;
+				case 48:
+					icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/50d@2x.png")); 
+					if(i==0) {
+						Descripcion_tiempo.setText("Nebuloso");
+						Imagen_Tiempo.setIcon(icono);
+					}
+					if(i==1) {
+						Imagen_Tiempo1.setIcon(icono);
+					}
+					if(i==2) {
+						Imagen_Tiempo2.setIcon(icono);
+					}
+					if(i==3) {
+						Imagen_Tiempo3.setIcon(icono);
+					}
+					if(i==4) {
+						Imagen_Tiempo4.setIcon(icono);
+					}
+					if(i==5) {
+						Imagen_Tiempo5.setIcon(icono);
+					}
+					if(i==6) {
+						Imagen_Tiempo6.setIcon(icono);
+					}						
+					break;
+				case 51:
+					icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/09d@2x.png")); 
+					if(i==0) {
+						Descripcion_tiempo.setText("Llovizna leve");
+						Imagen_Tiempo.setIcon(icono);
+					}
+					if(i==1) {
+						Imagen_Tiempo1.setIcon(icono);
+					}
+					if(i==2) {
+						Imagen_Tiempo2.setIcon(icono);
+					}
+					if(i==3) {
+						Imagen_Tiempo3.setIcon(icono);
+					}
+					if(i==4) {
+						Imagen_Tiempo4.setIcon(icono);
+					}
+					if(i==5) {
+						Imagen_Tiempo5.setIcon(icono);
+					}
+					if(i==6) {
+						Imagen_Tiempo6.setIcon(icono);
+					}						
+					break;
+				case 53:
+					icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/09d@2x.png")); 
+					if(i==0) {
+						Descripcion_tiempo.setText("LLovizna");
+						Imagen_Tiempo.setIcon(icono);
+					}
+					if(i==1) {
+						Imagen_Tiempo1.setIcon(icono);
+					}
+					if(i==2) {
+						Imagen_Tiempo2.setIcon(icono);
+					}
+					if(i==3) {
+						Imagen_Tiempo3.setIcon(icono);
+					}
+					if(i==4) {
+						Imagen_Tiempo4.setIcon(icono);
+					}
+					if(i==5) {
+						Imagen_Tiempo5.setIcon(icono);
+					}
+					if(i==6) {
+						Imagen_Tiempo6.setIcon(icono);
+					}					
+					break;
+				case 55:
+					icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/09d@2x.png")); 
+					if(i==0) {
+						Descripcion_tiempo.setText("Gran LLovizna");
+						Imagen_Tiempo.setIcon(icono);
+					}
+					if(i==1) {
+						Imagen_Tiempo1.setIcon(icono);
+					}
+					if(i==2) {
+						Imagen_Tiempo2.setIcon(icono);
+					}
+					if(i==3) {
+						Imagen_Tiempo3.setIcon(icono);
+					}
+					if(i==4) {
+						Imagen_Tiempo4.setIcon(icono);
+					}
+					if(i==5) {
+						Imagen_Tiempo5.setIcon(icono);
+					}
+					if(i==6) {
+						Imagen_Tiempo6.setIcon(icono);
+					}						
+					break;
+				case 56:
+					icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/09d@2x.png")); 
+					if(i==0) {
+						Descripcion_tiempo.setText("Llovizna helada");
+						Imagen_Tiempo.setIcon(icono);
+					}
+					if(i==1) {
+						Imagen_Tiempo1.setIcon(icono);
+					}
+					if(i==2) {
+						Imagen_Tiempo2.setIcon(icono);
+					}
+					if(i==3) {
+						Imagen_Tiempo3.setIcon(icono);
+					}
+					if(i==4) {
+						Imagen_Tiempo4.setIcon(icono);
+					}
+					if(i==5) {
+						Imagen_Tiempo5.setIcon(icono);
+					}
+					if(i==6) {
+						Imagen_Tiempo6.setIcon(icono);
+					}						
+					break;
+				case 57:
+					icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/09d@2x.png")); 
+					if(i==0) {
+						Descripcion_tiempo.setText("Llovizna helada");
+						Imagen_Tiempo.setIcon(icono);
+					}
+					if(i==1) {
+						Imagen_Tiempo1.setIcon(icono);
+					}
+					if(i==2) {
+						Imagen_Tiempo2.setIcon(icono);
+					}
+					if(i==3) {
+						Imagen_Tiempo3.setIcon(icono);
+					}
+					if(i==4) {
+						Imagen_Tiempo4.setIcon(icono);
+					}
+					if(i==5) {
+						Imagen_Tiempo5.setIcon(icono);
+					}
+					if(i==6) {
+						Imagen_Tiempo6.setIcon(icono);
+					}							
+					break;
+				case 61:
+					icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/10d@2x.png")); 
+					if(i==0) {
+						Descripcion_tiempo.setText("Lluvia leve");
+						Imagen_Tiempo.setIcon(icono);
+					}
+					if(i==1) {
+						Imagen_Tiempo1.setIcon(icono);
+					}
+					if(i==2) {
+						Imagen_Tiempo2.setIcon(icono);
+					}
+					if(i==3) {
+						Imagen_Tiempo3.setIcon(icono);
+					}
+					if(i==4) {
+						Imagen_Tiempo4.setIcon(icono);
+					}
+					if(i==5) {
+						Imagen_Tiempo5.setIcon(icono);
+					}
+					if(i==6) {
+						Imagen_Tiempo6.setIcon(icono);
+					}							
+					break;
+				case 63:
+					icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/10d@2x.png")); 
+					if(i==0) {
+						Descripcion_tiempo.setText("Lluvia");
+						Imagen_Tiempo.setIcon(icono);
+					}
+					if(i==1) {
+						Imagen_Tiempo1.setIcon(icono);
+					}
+					if(i==2) {
+						Imagen_Tiempo2.setIcon(icono);
+					}
+					if(i==3) {
+						Imagen_Tiempo3.setIcon(icono);
+					}
+					if(i==4) {
+						Imagen_Tiempo4.setIcon(icono);
+					}
+					if(i==5) {
+						Imagen_Tiempo5.setIcon(icono);
+					}
+					if(i==6) {
+						Imagen_Tiempo6.setIcon(icono);
+					}								
+					break;
+				case 65:
+					icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/10d@2x.png")); 
+					if(i==0) {
+						Descripcion_tiempo.setText("Lluvia fuerte");
+						Imagen_Tiempo.setIcon(icono);
+					}
+					if(i==1) {
+						Imagen_Tiempo1.setIcon(icono);
+					}
+					if(i==2) {
+						Imagen_Tiempo2.setIcon(icono);
+					}
+					if(i==3) {
+						Imagen_Tiempo3.setIcon(icono);
+					}
+					if(i==4) {
+						Imagen_Tiempo4.setIcon(icono);
+					}
+					if(i==5) {
+						Imagen_Tiempo5.setIcon(icono);
+					}
+					if(i==6) {
+						Imagen_Tiempo6.setIcon(icono);
+					}						
+					break;
+				case 66:
+					icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/10d@2x.png")); 
+					if(i==0) {
+						Descripcion_tiempo.setText("LLuvia helada");
+						Imagen_Tiempo.setIcon(icono);
+					}
+					if(i==1) {
+						Imagen_Tiempo1.setIcon(icono);
+					}
+					if(i==2) {
+						Imagen_Tiempo2.setIcon(icono);
+					}
+					if(i==3) {
+						Imagen_Tiempo3.setIcon(icono);
+					}
+					if(i==4) {
+						Imagen_Tiempo4.setIcon(icono);
+					}
+					if(i==5) {
+						Imagen_Tiempo5.setIcon(icono);
+					}
+					if(i==6) {
+						Imagen_Tiempo6.setIcon(icono);
+					}					
+					break;
+				case 67:
+					icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/10d@2x.png"));
+					if(i==0) {
+						Descripcion_tiempo.setText("LLuvia helada");
+						Imagen_Tiempo.setIcon(icono);
+					}
+					if(i==1) {
+						Imagen_Tiempo1.setIcon(icono);
+					}
+					if(i==2) {
+						Imagen_Tiempo2.setIcon(icono);
+					}
+					if(i==3) {
+						Imagen_Tiempo3.setIcon(icono);
+					}
+					if(i==4) {
+						Imagen_Tiempo4.setIcon(icono);
+					}
+					if(i==5) {
+						Imagen_Tiempo5.setIcon(icono);
+					}
+					if(i==6) {
+						Imagen_Tiempo6.setIcon(icono);
+					}							
+					break;
+				case 71:
+					icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/13d@2x.png"));
+					if(i==0) {
+						Descripcion_tiempo.setText("Nieve leve");
+						Imagen_Tiempo.setIcon(icono);
+					}
+					if(i==1) {
+						Imagen_Tiempo1.setIcon(icono);
+					}
+					if(i==2) {
+						Imagen_Tiempo2.setIcon(icono);
+					}
+					if(i==3) {
+						Imagen_Tiempo3.setIcon(icono);
+					}
+					if(i==4) {
+						Imagen_Tiempo4.setIcon(icono);
+					}
+					if(i==5) {
+						Imagen_Tiempo5.setIcon(icono);
+					}
+					if(i==6) {
+						Imagen_Tiempo6.setIcon(icono);
+					}					
+					break;
+				case 73:
+					icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/13d@2x.png"));
+					if(i==0) {
+						Descripcion_tiempo.setText("Nieve");
+						Imagen_Tiempo.setIcon(icono);
+					}
+					if(i==1) {
+						Imagen_Tiempo1.setIcon(icono);
+					}
+					if(i==2) {
+						Imagen_Tiempo2.setIcon(icono);
+					}
+					if(i==3) {
+						Imagen_Tiempo3.setIcon(icono);
+					}
+					if(i==4) {
+						Imagen_Tiempo4.setIcon(icono);
+					}
+					if(i==5) {
+						Imagen_Tiempo5.setIcon(icono);
+					}
+					if(i==6) {
+						Imagen_Tiempo6.setIcon(icono);
+					}					
+					break;
+				case 75:
+					icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/13d@2x.png"));
+					if(i==0) {
+						Descripcion_tiempo.setText("Nieve fuerte");
+						Imagen_Tiempo.setIcon(icono);
+					}
+					if(i==1) {
+						Imagen_Tiempo1.setIcon(icono);
+					}
+					if(i==2) {
+						Imagen_Tiempo2.setIcon(icono);
+					}
+					if(i==3) {
+						Imagen_Tiempo3.setIcon(icono);
+					}
+					if(i==4) {
+						Imagen_Tiempo4.setIcon(icono);
+					}
+					if(i==5) {
+						Imagen_Tiempo5.setIcon(icono);
+					}
+					if(i==6) {
+						Imagen_Tiempo6.setIcon(icono);
+					}				
+					break;
+				case 77:
+					icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/13d@2x.png"));
+					if(i==0) {
+						Descripcion_tiempo.setText("Copos de nieve");
+						Imagen_Tiempo.setIcon(icono);
+					}
+					if(i==1) {
+						Imagen_Tiempo1.setIcon(icono);
+					}
+					if(i==2) {
+						Imagen_Tiempo2.setIcon(icono);
+					}
+					if(i==3) {
+						Imagen_Tiempo3.setIcon(icono);
+					}
+					if(i==4) {
+						Imagen_Tiempo4.setIcon(icono);
+					}
+					if(i==5) {
+						Imagen_Tiempo5.setIcon(icono);
+					}
+					if(i==6) {
+						Imagen_Tiempo6.setIcon(icono);
+					}					
+					break;
+				case 80:
+					icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/09d@2x.png"));
+					if(i==0) {
+						Descripcion_tiempo.setText("Chispea leve");
+						Imagen_Tiempo.setIcon(icono);
+					}
+					if(i==1) {
+						Imagen_Tiempo1.setIcon(icono);
+					}
+					if(i==2) {
+						Imagen_Tiempo2.setIcon(icono);
+					}
+					if(i==3) {
+						Imagen_Tiempo3.setIcon(icono);
+					}
+					if(i==4) {
+						Imagen_Tiempo4.setIcon(icono);
+					}
+					if(i==5) {
+						Imagen_Tiempo5.setIcon(icono);
+					}
+					if(i==6) {
+						Imagen_Tiempo6.setIcon(icono);
+					}				
+					break;
+				case 81:
+					icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/09d@2x.png"));
+					if(i==0) {
+						Descripcion_tiempo.setText("Chispea");
+						Imagen_Tiempo.setIcon(icono);
+					}
+					if(i==1) {
+						Imagen_Tiempo1.setIcon(icono);
+					}
+					if(i==2) {
+						Imagen_Tiempo2.setIcon(icono);
+					}
+					if(i==3) {
+						Imagen_Tiempo3.setIcon(icono);
+					}
+					if(i==4) {
+						Imagen_Tiempo4.setIcon(icono);
+					}
+					if(i==5) {
+						Imagen_Tiempo5.setIcon(icono);
+					}
+					if(i==6) {
+						Imagen_Tiempo6.setIcon(icono);
+					}				
+					break;
+				case 82:
+					icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/09d@2x.png"));
+					if(i==0) {
+						Descripcion_tiempo.setText("Chispea fuerte");
+						Imagen_Tiempo.setIcon(icono);
+					}
+					if(i==1) {
+						Imagen_Tiempo1.setIcon(icono);
+					}
+					if(i==2) {
+						Imagen_Tiempo2.setIcon(icono);
+					}
+					if(i==3) {
+						Imagen_Tiempo3.setIcon(icono);
+					}
+					if(i==4) {
+						Imagen_Tiempo4.setIcon(icono);
+					}
+					if(i==5) {
+						Imagen_Tiempo5.setIcon(icono);
+					}
+					if(i==6) {
+						Imagen_Tiempo6.setIcon(icono);
+					}	
+					break;
+				case 85:
+					icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/13d@2x.png"));
+					if(i==0) {
+						Descripcion_tiempo.setText("Chispea nieve");
+						Imagen_Tiempo.setIcon(icono);
+					}
+					if(i==1) {
+						Imagen_Tiempo1.setIcon(icono);
+					}
+					if(i==2) {
+						Imagen_Tiempo2.setIcon(icono);
+					}
+					if(i==3) {
+						Imagen_Tiempo3.setIcon(icono);
+					}
+					if(i==4) {
+						Imagen_Tiempo4.setIcon(icono);
+					}
+					if(i==5) {
+						Imagen_Tiempo5.setIcon(icono);
+					}
+					if(i==6) {
+						Imagen_Tiempo6.setIcon(icono);
+					}				
+					break;
+				case 86:
+					icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/13d@2x.png"));
+					if(i==0) {
+						Descripcion_tiempo.setText("Chispea nieve");
+						Imagen_Tiempo.setIcon(icono);
+					}
+					if(i==1) {
+						Imagen_Tiempo1.setIcon(icono);
+					}
+					if(i==2) {
+						Imagen_Tiempo2.setIcon(icono);
+					}
+					if(i==3) {
+						Imagen_Tiempo3.setIcon(icono);
+					}
+					if(i==4) {
+						Imagen_Tiempo4.setIcon(icono);
+					}
+					if(i==5) {
+						Imagen_Tiempo5.setIcon(icono);
+					}
+					if(i==6) {
+						Imagen_Tiempo6.setIcon(icono);
+					}				
+					break;
+				case 95:
+					icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/11d@2x.png"));
+					if(i==0) {
+						Descripcion_tiempo.setText("Tormenta electrica");
+						Imagen_Tiempo.setIcon(icono);
+					}
+					if(i==1) {
+						Imagen_Tiempo1.setIcon(icono);
+					}
+					if(i==2) {
+						Imagen_Tiempo2.setIcon(icono);
+					}
+					if(i==3) {
+						Imagen_Tiempo3.setIcon(icono);
+					}
+					if(i==4) {
+						Imagen_Tiempo4.setIcon(icono);
+					}
+					if(i==5) {
+						Imagen_Tiempo5.setIcon(icono);
+					}
+					if(i==6) {
+						Imagen_Tiempo6.setIcon(icono);
+					}					
+					break;
+				case 96:
+					icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/11d@2x.png"));
+					if(i==0) {
+						Descripcion_tiempo.setText("Tormenta granizada");
+						Imagen_Tiempo.setIcon(icono);
+					}
+					if(i==1) {
+						Imagen_Tiempo1.setIcon(icono);
+					}
+					if(i==2) {
+						Imagen_Tiempo2.setIcon(icono);
+					}
+					if(i==3) {
+						Imagen_Tiempo3.setIcon(icono);
+					}
+					if(i==4) {
+						Imagen_Tiempo4.setIcon(icono);
+					}
+					if(i==5) {
+						Imagen_Tiempo5.setIcon(icono);
+					}
+					if(i==6) {
+						Imagen_Tiempo6.setIcon(icono);
+					}					
+					break;
+				case 99:
+					icono = new ImageIcon(new URL("http://openweathermap.org/img/wn/11d@2x.png"));
+					if(i==0) {
+						Descripcion_tiempo.setText("Tormenta granizada");
+						Imagen_Tiempo.setIcon(icono);
+					}
+					if(i==1) {
+						Imagen_Tiempo1.setIcon(icono);
+					}
+					if(i==2) {
+						Imagen_Tiempo2.setIcon(icono);
+					}
+					if(i==3) {
+						Imagen_Tiempo3.setIcon(icono);
+					}
+					if(i==4) {
+						Imagen_Tiempo4.setIcon(icono);
+					}
+					if(i==5) {
+						Imagen_Tiempo5.setIcon(icono);
+					}
+					if(i==6) {
+						Imagen_Tiempo6.setIcon(icono);
+					}						
+					break;
+				default:
+					// Código por defecto si el código no está en la lista
+					break;
+				}
 			}
-
 		}catch(Exception e) {
 			System.out.println(e);
 		}
@@ -647,6 +1343,30 @@ public class PI2 {
 		min_temperatura_semanal5.setText(String.valueOf(temperatura_min[5]));
 		min_temperatura_semanal6.setText(String.valueOf(temperatura_min[6]));
 
+		viento_semanal.setText(String.valueOf(vient[1])+ " km/h");
+		prob_semanal.setText(String.valueOf(lluv[1])+ " mm");
+		hor_semanal.setText(String.valueOf(hor_lluv[1])+ " h");
+		nieve_semanal.setText(String.valueOf(niev[1]) + " cm");
+		viento_semanal2.setText(String.valueOf(vient[2])+ " km/h");
+		prob_semanal2.setText(String.valueOf(lluv[2])+ " mm");
+		hor_semanal2.setText(String.valueOf(hor_lluv[2])+ " h");
+		nieve_semanal2.setText(String.valueOf(niev[2]) + " cm");
+		viento_semanal3.setText(String.valueOf(vient[3])+ " km/h");
+		prob_semanal3.setText(String.valueOf(lluv[3])+ " mm");
+		hor_semanal3.setText(String.valueOf(hor_lluv[3])+ " h");
+		nieve_semanal3.setText(String.valueOf(niev[3]) + " cm");
+		viento_semanal4.setText(String.valueOf(vient[4])+ " km/h");
+		prob_semanal4.setText(String.valueOf(lluv[4])+ " mm");
+		hor_semanal4.setText(String.valueOf(hor_lluv[4])+ " h");
+		nieve_semanal4.setText(String.valueOf(niev[4]) + " cm");
+		viento_semanal5.setText(String.valueOf(vient[5])+ " km/h");
+		prob_semanal5.setText(String.valueOf(lluv[5])+ " mm");
+		hor_semanal5.setText(String.valueOf(hor_lluv[5])+ " h");
+		nieve_semanal5.setText(String.valueOf(niev[5]) + " cm");
+		viento_semanal6.setText(String.valueOf(vient[6])+ " km/h");
+		prob_semanal6.setText(String.valueOf(lluv[6])+ " mm");
+		hor_semanal6.setText(String.valueOf(hor_lluv[6])+ " h");
+		nieve_semanal6.setText(String.valueOf(niev[6]) + " cm");
 	}
 
 
@@ -705,11 +1425,11 @@ public class PI2 {
 		Titulo.setFont(new Font("Dubai", Font.BOLD, 28));
 		Titulo.setBounds(10, 11, 154, 26);
 		panel.add(Titulo);
-		
+
 		JLabel Imagen_pos = new JLabel(new ImageIcon("Imagenes/posicion1.png"));
 		Imagen_pos.setBounds(301, 19, 20, 20);
 		panel.add(Imagen_pos);
-		
+
 		JLabel Titulo1 = new JLabel("TorreEspaña");
 		Titulo1.setFont(new Font("Dubai", Font.BOLD, 17));
 		Titulo1.setBounds(323, 18, 154, 26);
@@ -726,7 +1446,7 @@ public class PI2 {
 		panel_hoy.add(Imagen_prob_lluvia);
 
 
-		JLabel Imagen_nieve = new JLabel(new ImageIcon("Imagenes/nieve_icono.png"));
+		JLabel Imagen_nieve = new JLabel(new ImageIcon("Imagenes/copo_nieve_icono.png"));
 		Imagen_nieve.setBounds(241, 155, 30, 30);
 		panel_hoy.add(Imagen_nieve);
 
@@ -928,6 +1648,107 @@ public class PI2 {
 		semanal_min6.setFont(new Font("Dubai", Font.BOLD, 14));
 		semanal_min6.setBounds(373, 346, 46, 14);
 		panel_semanal.add(semanal_min6);
+
+
+		JLabel Imagen_viento1 = new JLabel(new ImageIcon("Imagenes/icono_viento.png"));
+		Imagen_viento1.setBounds(180, 0, 30, 30);
+		panel_semanal.add(Imagen_viento1);
+
+		JLabel Imagen_prob_lluvia1 = new JLabel(new ImageIcon("Imagenes/lluvia_icono.png"));
+		Imagen_prob_lluvia1.setBounds(222, 0, 30, 30);
+		panel_semanal.add(Imagen_prob_lluvia1);
+
+
+		JLabel Imagen_nieve1 = new JLabel(new ImageIcon("Imagenes/copo_nieve_icono.png"));
+		Imagen_nieve1.setBounds(256, 0, 30, 30);
+		panel_semanal.add(Imagen_nieve1);
+
+		JLabel Imagen_hor_lluvia1 = new JLabel(new ImageIcon("Imagenes/hora_lluvia_icono.png"));
+		Imagen_hor_lluvia1.setBounds(290, 0, 30, 30);
+		panel_semanal.add(Imagen_hor_lluvia1);
+
+		JLabel Imagen_viento2 = new JLabel(new ImageIcon("Imagenes/icono_viento.png"));
+		Imagen_viento2.setBounds(180, 61, 30, 30);
+		panel_semanal.add(Imagen_viento2);
+
+		JLabel Imagen_prob_lluvia2 = new JLabel(new ImageIcon("Imagenes/lluvia_icono.png"));
+		Imagen_prob_lluvia2.setBounds(222, 61, 30, 30);
+		panel_semanal.add(Imagen_prob_lluvia2);
+
+		JLabel Imagen_nieve2 = new JLabel(new ImageIcon("Imagenes/copo_nieve_icono.png"));
+		Imagen_nieve2.setBounds(256, 61, 30, 30);
+		panel_semanal.add(Imagen_nieve2);
+
+		JLabel Imagen_hor_lluvia2 = new JLabel(new ImageIcon("Imagenes/hora_lluvia_icono.png"));
+		Imagen_hor_lluvia2.setBounds(290, 61, 30, 30);
+		panel_semanal.add(Imagen_hor_lluvia2);
+
+		JLabel Imagen_viento3 = new JLabel(new ImageIcon("Imagenes/icono_viento.png"));
+		Imagen_viento3.setBounds(180, 125, 30, 30);
+		panel_semanal.add(Imagen_viento3);
+
+		JLabel Imagen_prob_lluvia3 = new JLabel(new ImageIcon("Imagenes/lluvia_icono.png"));
+		Imagen_prob_lluvia3.setBounds(222, 125, 30, 30);
+		panel_semanal.add(Imagen_prob_lluvia3);
+
+
+		JLabel Imagen_nieve3 = new JLabel(new ImageIcon("Imagenes/copo_nieve_icono.png"));
+		Imagen_nieve3.setBounds(256, 125, 30, 30);
+		panel_semanal.add(Imagen_nieve3);
+
+		JLabel Imagen_hor_lluvia3 = new JLabel(new ImageIcon("Imagenes/hora_lluvia_icono.png"));
+		Imagen_hor_lluvia3.setBounds(290, 125, 30, 30);
+		panel_semanal.add(Imagen_hor_lluvia3);
+
+		JLabel Imagen_viento4 = new JLabel(new ImageIcon("Imagenes/icono_viento.png"));
+		Imagen_viento4.setBounds(180, 186, 30, 30);
+		panel_semanal.add(Imagen_viento4);
+
+		JLabel Imagen_prob_lluvia4 = new JLabel(new ImageIcon("Imagenes/lluvia_icono.png"));
+		Imagen_prob_lluvia4.setBounds(222, 186, 30, 30);
+		panel_semanal.add(Imagen_prob_lluvia4);
+
+		JLabel Imagen_nieve4 = new JLabel(new ImageIcon("Imagenes/copo_nieve_icono.png"));
+		Imagen_nieve4.setBounds(256, 186, 30, 30);
+		panel_semanal.add(Imagen_nieve4);
+
+		JLabel Imagen_hor_lluvia4 = new JLabel(new ImageIcon("Imagenes/hora_lluvia_icono.png"));
+		Imagen_hor_lluvia4.setBounds(290, 186, 30, 30);
+		panel_semanal.add(Imagen_hor_lluvia4);
+
+		JLabel Imagen_viento5 = new JLabel(new ImageIcon("Imagenes/icono_viento.png"));
+		Imagen_viento5.setBounds(180, 249, 30, 30);
+		panel_semanal.add(Imagen_viento5);
+
+		JLabel Imagen_prob_lluvia5 = new JLabel(new ImageIcon("Imagenes/lluvia_icono.png"));
+		Imagen_prob_lluvia5.setBounds(222, 249, 30, 30);
+		panel_semanal.add(Imagen_prob_lluvia5);
+
+		JLabel Imagen_nieve5 = new JLabel(new ImageIcon("Imagenes/copo_nieve_icono.png"));
+		Imagen_nieve5.setBounds(256, 249, 30, 30);
+		panel_semanal.add(Imagen_nieve5);
+
+		JLabel Imagen_hor_lluvia5 = new JLabel(new ImageIcon("Imagenes/hora_lluvia_icono.png"));
+		Imagen_hor_lluvia5.setBounds(290, 249, 30, 30);
+		panel_semanal.add(Imagen_hor_lluvia5);
+
+		JLabel Imagen_viento6 = new JLabel(new ImageIcon("Imagenes/icono_viento.png"));
+		Imagen_viento6.setBounds(180, 309, 30, 30);
+		panel_semanal.add(Imagen_viento6);
+
+		JLabel Imagen_prob_lluvia6 = new JLabel(new ImageIcon("Imagenes/lluvia_icono.png"));
+		Imagen_prob_lluvia6.setBounds(222, 309, 30, 30);
+		panel_semanal.add(Imagen_prob_lluvia6);
+
+		JLabel Imagen_nieve6 = new JLabel(new ImageIcon("Imagenes/copo_nieve_icono.png"));
+		Imagen_nieve6.setBounds(256, 309, 30, 30);
+		panel_semanal.add(Imagen_nieve6);
+
+		JLabel Imagen_hor_lluvia6 = new JLabel(new ImageIcon("Imagenes/hora_lluvia_icono.png"));
+		Imagen_hor_lluvia6.setBounds(290, 309, 30, 30);
+		panel_semanal.add(Imagen_hor_lluvia6);
+
+
 
 		//se activan funciones
 
