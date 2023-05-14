@@ -274,32 +274,32 @@ public class PI2 {
 
 		JLabel fecha1 = new JLabel("New label");
 		fecha1.setFont(new Font("Dubai", Font.BOLD, 12));
-		fecha1.setBounds(15, 13, 130, 14);
+		fecha1.setBounds(15, 15, 130, 14);
 		panel_semanal.add(fecha1);
 
 		JLabel fecha2 = new JLabel("New label");
 		fecha2.setFont(new Font("Dubai", Font.BOLD, 12));
-		fecha2.setBounds(15, 74, 130, 14);
+		fecha2.setBounds(15, 76, 130, 14);
 		panel_semanal.add(fecha2);
 
 		JLabel fecha3 = new JLabel("New label");
 		fecha3.setFont(new Font("Dubai", Font.BOLD, 12));
-		fecha3.setBounds(15, 136, 130, 14);
+		fecha3.setBounds(15, 138, 130, 14);
 		panel_semanal.add(fecha3);
 
 		JLabel fecha4 = new JLabel("New label");
 		fecha4.setFont(new Font("Dubai", Font.BOLD, 12));
-		fecha4.setBounds(15, 198, 130, 14);
+		fecha4.setBounds(15, 200, 130, 14);
 		panel_semanal.add(fecha4);
 
 		JLabel fecha5 = new JLabel("New label");
 		fecha5.setFont(new Font("Dubai", Font.BOLD, 12));
-		fecha5.setBounds(15, 260, 130, 14);
+		fecha5.setBounds(15, 262, 130, 14);
 		panel_semanal.add(fecha5);
 
 		JLabel fecha6 = new JLabel("New label");
 		fecha6.setFont(new Font("Dubai", Font.BOLD, 12));
-		fecha6.setBounds(15, 322, 130, 14);
+		fecha6.setBounds(15, 324, 130, 14);
 		panel_semanal.add(fecha6);
 
 		JLabel max_temperatura_semanal1 = new JLabel();
