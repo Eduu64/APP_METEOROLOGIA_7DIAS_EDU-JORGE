@@ -1394,6 +1394,7 @@ public class PI2 {
 
 		JPanel panel = new JPanel();
 		panel.setBounds(0, 0, 434, 51);
+		//panel.setBackground(new Color(96,122,30));
 		contentPane.add(panel);
 		panel.setLayout(null);
 
@@ -1755,6 +1756,20 @@ public class PI2 {
 		String informacionAPI = llamada(); //llama a la API
 		JSONObject ob = new JSONObject(informacionAPI); //se convierte en objeto la respuesta de la API
 		desfragmentacion(informacionAPI,ob, panel_hoy, panel_horas, panel_semanal);//se desfragmenta y se representa en la interfaz
+
+		
+		//panel 
+		JLabel fondo = new JLabel(new ImageIcon("Imagenes/cuadrado3.png"));
+		fondo.setBackground(Color.WHITE);
+		fondo.setForeground(Color.WHITE);
+		fondo.setBounds(300, 15, 119, 30);
+		panel.add(fondo);
+		
+		JLabel fondo1 = new JLabel(new ImageIcon("Imagenes/cuadrado4.png"));
+		fondo1.setBackground(Color.WHITE);
+		fondo1.setForeground(Color.WHITE);
+		fondo1.setBounds(7, 5, 162, 34);
+		panel.add(fondo1);
 
 		//fondos panel_hoy
 
