@@ -91,19 +91,19 @@ public class PI2 {
 		JLabel Recomendaciones = new JLabel("New label");
 		Recomendaciones.setFont(new Font("Dubai", Font.BOLD, 12));
 		Recomendaciones.setVerticalAlignment(SwingConstants.TOP);
-		Recomendaciones.setBounds(14, 237, 409, 36);
+		Recomendaciones.setBounds(17, 245, 409, 36);
 		panel_hoy.add(Recomendaciones);
 
 		JLabel Recomendaciones1 = new JLabel("New label");
 		Recomendaciones1.setFont(new Font("Dubai", Font.BOLD, 12));
 		Recomendaciones1.setVerticalAlignment(SwingConstants.TOP);
-		Recomendaciones1.setBounds(14, 280, 409, 36);
+		Recomendaciones1.setBounds(17, 282, 409, 36);
 		panel_hoy.add(Recomendaciones1);
 
 		JLabel Recomendaciones2 = new JLabel("New label");
 		Recomendaciones2.setFont(new Font("Dubai", Font.BOLD, 12));
 		Recomendaciones2.setVerticalAlignment(SwingConstants.TOP);
-		Recomendaciones2.setBounds(14, 320, 409, 36);
+		Recomendaciones2.setBounds(17, 322, 409, 36);
 		panel_hoy.add(Recomendaciones2);
 
 
@@ -274,62 +274,62 @@ public class PI2 {
 
 		JLabel fecha1 = new JLabel("New label");
 		fecha1.setFont(new Font("Dubai", Font.BOLD, 12));
-		fecha1.setBounds(10, 11, 130, 14);
+		fecha1.setBounds(15, 13, 130, 14);
 		panel_semanal.add(fecha1);
 
 		JLabel fecha2 = new JLabel("New label");
 		fecha2.setFont(new Font("Dubai", Font.BOLD, 12));
-		fecha2.setBounds(10, 73, 130, 14);
+		fecha2.setBounds(15, 74, 130, 14);
 		panel_semanal.add(fecha2);
 
 		JLabel fecha3 = new JLabel("New label");
 		fecha3.setFont(new Font("Dubai", Font.BOLD, 12));
-		fecha3.setBounds(10, 135, 130, 14);
+		fecha3.setBounds(15, 136, 130, 14);
 		panel_semanal.add(fecha3);
 
 		JLabel fecha4 = new JLabel("New label");
 		fecha4.setFont(new Font("Dubai", Font.BOLD, 12));
-		fecha4.setBounds(10, 197, 130, 14);
+		fecha4.setBounds(15, 198, 130, 14);
 		panel_semanal.add(fecha4);
 
 		JLabel fecha5 = new JLabel("New label");
 		fecha5.setFont(new Font("Dubai", Font.BOLD, 12));
-		fecha5.setBounds(10, 259, 130, 14);
+		fecha5.setBounds(15, 260, 130, 14);
 		panel_semanal.add(fecha5);
 
 		JLabel fecha6 = new JLabel("New label");
 		fecha6.setFont(new Font("Dubai", Font.BOLD, 12));
-		fecha6.setBounds(10, 321, 130, 14);
+		fecha6.setBounds(15, 322, 130, 14);
 		panel_semanal.add(fecha6);
 
 		JLabel max_temperatura_semanal1 = new JLabel();
 		max_temperatura_semanal1.setFont(new Font("Dubai", Font.BOLD, 14));
-		max_temperatura_semanal1.setBounds(317, 11, 46, 14);
+		max_temperatura_semanal1.setBounds(317, 16, 46, 14);
 		panel_semanal.add(max_temperatura_semanal1);
 
 		JLabel max_temperatura_semanal2 = new JLabel();
 		max_temperatura_semanal2.setFont(new Font("Dubai", Font.BOLD, 14));
-		max_temperatura_semanal2.setBounds(317, 73, 46, 14);
+		max_temperatura_semanal2.setBounds(317, 78, 46, 14);
 		panel_semanal.add(max_temperatura_semanal2);
 
 		JLabel max_temperatura_semanal3 = new JLabel();
 		max_temperatura_semanal3.setFont(new Font("Dubai", Font.BOLD, 14));
-		max_temperatura_semanal3.setBounds(317, 135, 46, 14);
+		max_temperatura_semanal3.setBounds(317, 140, 46, 14);
 		panel_semanal.add(max_temperatura_semanal3);
 
 		JLabel max_temperatura_semanal4 = new JLabel();
 		max_temperatura_semanal4.setFont(new Font("Dubai", Font.BOLD, 14));
-		max_temperatura_semanal4.setBounds(317, 197, 46, 14);
+		max_temperatura_semanal4.setBounds(317, 202, 46, 14);
 		panel_semanal.add(max_temperatura_semanal4);
 
 		JLabel max_temperatura_semanal5 = new JLabel();
 		max_temperatura_semanal5.setFont(new Font("Dubai", Font.BOLD, 14));
-		max_temperatura_semanal5.setBounds(317, 259, 46, 14);
+		max_temperatura_semanal5.setBounds(317, 264, 46, 14);
 		panel_semanal.add(max_temperatura_semanal5);
 
 		JLabel max_temperatura_semanal6 = new JLabel();
 		max_temperatura_semanal6.setFont(new Font("Dubai", Font.BOLD, 14));
-		max_temperatura_semanal6.setBounds(317, 321, 46, 14);
+		max_temperatura_semanal6.setBounds(317, 326, 46, 14);
 		panel_semanal.add(max_temperatura_semanal6);
 
 		JLabel min_temperatura_semanal1 = new JLabel();
@@ -705,6 +705,15 @@ public class PI2 {
 		Titulo.setFont(new Font("Dubai", Font.BOLD, 28));
 		Titulo.setBounds(10, 11, 154, 26);
 		panel.add(Titulo);
+		
+		JLabel Imagen_pos = new JLabel(new ImageIcon("Imagenes/posicion1.png"));
+		Imagen_pos.setBounds(301, 19, 20, 20);
+		panel.add(Imagen_pos);
+		
+		JLabel Titulo1 = new JLabel("TorreEspaña");
+		Titulo1.setFont(new Font("Dubai", Font.BOLD, 17));
+		Titulo1.setBounds(323, 18, 154, 26);
+		panel.add(Titulo1);
 
 		//panel_hoy
 
@@ -862,32 +871,32 @@ public class PI2 {
 
 		JLabel semanal_max1 = new JLabel("MAX");
 		semanal_max1.setFont(new Font("Dubai", Font.BOLD, 14));
-		semanal_max1.setBounds(373, 11, 46, 14);
+		semanal_max1.setBounds(373, 15, 46, 14);
 		panel_semanal.add(semanal_max1);
 
 		JLabel semanal_max2 = new JLabel("MAX");
 		semanal_max2.setFont(new Font("Dubai", Font.BOLD, 14));
-		semanal_max2.setBounds(373, 73, 46, 14);
+		semanal_max2.setBounds(373, 77, 46, 14);
 		panel_semanal.add(semanal_max2);
 
 		JLabel semanal_max3 = new JLabel("MAX");
 		semanal_max3.setFont(new Font("Dubai", Font.BOLD, 14));
-		semanal_max3.setBounds(373, 135, 46, 14);
+		semanal_max3.setBounds(373, 139, 46, 14);
 		panel_semanal.add(semanal_max3);
 
 		JLabel semanal_max4 = new JLabel("MAX");
 		semanal_max4.setFont(new Font("Dubai", Font.BOLD, 14));
-		semanal_max4.setBounds(373, 197, 46, 14);
+		semanal_max4.setBounds(373, 201, 46, 14);
 		panel_semanal.add(semanal_max4);
 
 		JLabel semanal_max5 = new JLabel("MAX");
 		semanal_max5.setFont(new Font("Dubai", Font.BOLD, 14));
-		semanal_max5.setBounds(373, 259, 46, 14);
+		semanal_max5.setBounds(373, 263, 46, 14);
 		panel_semanal.add(semanal_max5);
 
 		JLabel semanal_max6 = new JLabel("MAX");
 		semanal_max6.setFont(new Font("Dubai", Font.BOLD, 14));
-		semanal_max6.setBounds(373, 321, 46, 14);
+		semanal_max6.setBounds(373, 325, 46, 14);
 		panel_semanal.add(semanal_max6);
 
 		JLabel semanal_min1 = new JLabel("MIN");
@@ -934,7 +943,7 @@ public class PI2 {
 		Imagen_fondo.setBounds(10, 11, 409, 117);
 		panel_hoy.add(Imagen_fondo);
 
-		JLabel Imagen_fondo_1 = new JLabel(new ImageIcon("Imagenes/cuadrado.png"));
+		JLabel Imagen_fondo_1 = new JLabel(new ImageIcon("Imagenes/cuadrado1.png"));
 		Imagen_fondo_1.setForeground(Color.WHITE);
 		Imagen_fondo_1.setBackground(Color.WHITE);
 		Imagen_fondo_1.setBounds(10, 138, 409, 86);
@@ -948,27 +957,27 @@ public class PI2 {
 
 		//fondos panel_semanal
 
-		JLabel fondo_tiempo0 = new JLabel(new ImageIcon("Imagenes/cuadrado.png"));
+		JLabel fondo_tiempo0 = new JLabel(new ImageIcon("Imagenes/cuadrado2.png"));
 		fondo_tiempo0.setBounds(10, 11, 409, 51);
 		panel_semanal.add(fondo_tiempo0);
 
-		JLabel fondo_tiempo1 = new JLabel(new ImageIcon("Imagenes/cuadrado.png"));
+		JLabel fondo_tiempo1 = new JLabel(new ImageIcon("Imagenes/cuadrado2.png"));
 		fondo_tiempo1.setBounds(10, 73, 409, 51);
 		panel_semanal.add(fondo_tiempo1);
 
-		JLabel fondo_tiempo2 = new JLabel(new ImageIcon("Imagenes/cuadrado.png"));
+		JLabel fondo_tiempo2 = new JLabel(new ImageIcon("Imagenes/cuadrado2.png"));
 		fondo_tiempo2.setBounds(10, 135, 409, 51);
 		panel_semanal.add(fondo_tiempo2);
 
-		JLabel fondo_tiempo3 = new JLabel(new ImageIcon("Imagenes/cuadrado.png"));
+		JLabel fondo_tiempo3 = new JLabel(new ImageIcon("Imagenes/cuadrado2.png"));
 		fondo_tiempo3.setBounds(10, 197, 409, 51);
 		panel_semanal.add(fondo_tiempo3);
 
-		JLabel fondo_tiempo4 = new JLabel(new ImageIcon("Imagenes/cuadrado.png"));
+		JLabel fondo_tiempo4 = new JLabel(new ImageIcon("Imagenes/cuadrado2.png"));
 		fondo_tiempo4.setBounds(10, 259, 409, 51);
 		panel_semanal.add(fondo_tiempo4);
 
-		JLabel fondo_tiempo5 = new JLabel(new ImageIcon("Imagenes/cuadrado.png"));
+		JLabel fondo_tiempo5 = new JLabel(new ImageIcon("Imagenes/cuadrado2.png"));
 		fondo_tiempo5.setBounds(10, 321, 409, 51);
 		panel_semanal.add(fondo_tiempo5);
 
