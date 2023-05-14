@@ -1791,6 +1791,18 @@ public class PI2 {
 		Recomendaciones_fondo.setBounds(10, 235, 409, 127);
 		panel_hoy.add(Recomendaciones_fondo);
 
+		//panel_horas
+		JLabel Imagen_fondo_horas = new JLabel(new ImageIcon("Imagenes/cuadrado5.png"));
+		Imagen_fondo_horas.setBackground(Color.WHITE);
+		Imagen_fondo_horas.setForeground(Color.WHITE);
+		Imagen_fondo_horas.setBounds(0, 3, 152, 353);
+		panel_horas.add(Imagen_fondo_horas);
+		
+		JLabel Imagen_fondo_horas1= new JLabel(new ImageIcon("Imagenes/cuadrado6.png"));
+		Imagen_fondo_horas1.setBackground(Color.WHITE);
+		Imagen_fondo_horas1.setForeground(Color.WHITE);
+		Imagen_fondo_horas1.setBounds(230, 6, 152, 277);
+		panel_horas.add(Imagen_fondo_horas1);
 		//fondos panel_semanal
 
 		JLabel fondo_tiempo0 = new JLabel(new ImageIcon("Imagenes/cuadrado2.png"));
