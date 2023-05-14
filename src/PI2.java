@@ -364,122 +364,122 @@ public class PI2 {
 
 		JLabel viento_semanal = new JLabel("24 km/h");
 		viento_semanal.setFont(new Font("Dubai", Font.BOLD, 10));
-		viento_semanal.setBounds(175, 36, 46, 14);
+		viento_semanal.setBounds(175, 44, 46, 14);
 		panel_semanal.add(viento_semanal);
 
 		JLabel prob_semanal = new JLabel("24 mm");
 		prob_semanal.setFont(new Font("Dubai", Font.BOLD, 10));
-		prob_semanal.setBounds(222, 36, 46, 14);
+		prob_semanal.setBounds(222, 44, 46, 14);
 		panel_semanal.add(prob_semanal);
 
 		JLabel nieve_semanal = new JLabel("24 cm");
 		nieve_semanal.setFont(new Font("Dubai", Font.BOLD, 10));
-		nieve_semanal.setBounds(258, 36, 46, 14);
+		nieve_semanal.setBounds(258, 44, 46, 14);
 		panel_semanal.add(nieve_semanal);
 
 		JLabel hor_semanal = new JLabel("0.0 h");
 		hor_semanal.setFont(new Font("Dubai", Font.BOLD, 10));
-		hor_semanal.setBounds(295, 36, 46, 14);
+		hor_semanal.setBounds(295, 44, 46, 14);
 		panel_semanal.add(hor_semanal);
 
 		JLabel viento_semanal2 = new JLabel("22 km/h");
 		viento_semanal2.setFont(new Font("Dubai", Font.BOLD, 10));
-		viento_semanal2.setBounds(175, 98, 46, 14);
+		viento_semanal2.setBounds(175, 106, 46, 14);
 		panel_semanal.add(viento_semanal2);
 
 		JLabel prob_semanal2 = new JLabel("26 mm");
 		prob_semanal2.setFont(new Font("Dubai", Font.BOLD, 10));
-		prob_semanal2.setBounds(222, 98, 46, 14);
+		prob_semanal2.setBounds(222, 106, 46, 14);
 		panel_semanal.add(prob_semanal2);
 
 		JLabel nieve_semanal2 = new JLabel("23 cm");
 		nieve_semanal2.setFont(new Font("Dubai", Font.BOLD, 10));
-		nieve_semanal2.setBounds(258, 98, 46, 14);
+		nieve_semanal2.setBounds(258, 106, 46, 14);
 		panel_semanal.add(nieve_semanal2);
 
 		JLabel hor_semanal2 = new JLabel("0.5 h");
 		hor_semanal2.setFont(new Font("Dubai", Font.BOLD, 10));
-		hor_semanal2.setBounds(295, 98, 46, 14);
+		hor_semanal2.setBounds(295, 106, 46, 14);
 		panel_semanal.add(hor_semanal2);
 
 		JLabel viento_semanal3 = new JLabel("24 km/h");
 		viento_semanal3.setFont(new Font("Dubai", Font.BOLD, 10));
-		viento_semanal3.setBounds(175, 160, 46, 14);
+		viento_semanal3.setBounds(175, 168, 46, 14);
 		panel_semanal.add(viento_semanal3);
 
 		JLabel prob_semanal3 = new JLabel("24 mm");
 		prob_semanal3.setFont(new Font("Dubai", Font.BOLD, 10));
-		prob_semanal3.setBounds(222, 160, 46, 14);
+		prob_semanal3.setBounds(222, 168, 46, 14);
 		panel_semanal.add(prob_semanal3);
 
 		JLabel nieve_semanal3 = new JLabel("24 cm");
 		nieve_semanal3.setFont(new Font("Dubai", Font.BOLD, 10));
-		nieve_semanal3.setBounds(258, 160, 46, 14);
+		nieve_semanal3.setBounds(258, 168, 46, 14);
 		panel_semanal.add(nieve_semanal3);
 
 		JLabel hor_semanal3 = new JLabel("0.0 h");
 		hor_semanal3.setFont(new Font("Dubai", Font.BOLD, 10));
-		hor_semanal3.setBounds(295, 160, 46, 14);
+		hor_semanal3.setBounds(295, 168, 46, 14);
 		panel_semanal.add(hor_semanal3);
 
 		JLabel viento_semanal4 = new JLabel("24 km/h");
 		viento_semanal4.setFont(new Font("Dubai", Font.BOLD, 10));
-		viento_semanal4.setBounds(175, 222, 46, 14);
+		viento_semanal4.setBounds(175, 230, 46, 14);
 		panel_semanal.add(viento_semanal4);
 
 		JLabel prob_semanal4 = new JLabel("24 mm");
 		prob_semanal4.setFont(new Font("Dubai", Font.BOLD, 10));
-		prob_semanal4.setBounds(222, 222, 46, 14);
+		prob_semanal4.setBounds(222, 230, 46, 14);
 		panel_semanal.add(prob_semanal4);
 
 		JLabel nieve_semanal4 = new JLabel("24 cm");
 		nieve_semanal4.setFont(new Font("Dubai", Font.BOLD, 10));
-		nieve_semanal4.setBounds(258, 222, 46, 14);
+		nieve_semanal4.setBounds(258, 230, 46, 14);
 		panel_semanal.add(nieve_semanal4);
 
 		JLabel hor_semanal4 = new JLabel("0.0 h");
 		hor_semanal4.setFont(new Font("Dubai", Font.BOLD, 10));
-		hor_semanal4.setBounds(295, 222, 46, 14);
+		hor_semanal4.setBounds(295, 230, 46, 14);
 		panel_semanal.add(hor_semanal4);
 
 		JLabel viento_semanal5 = new JLabel("24 km/h");
 		viento_semanal5.setFont(new Font("Dubai", Font.BOLD, 10));
-		viento_semanal5.setBounds(175, 284, 46, 14);
+		viento_semanal5.setBounds(175, 292, 46, 14);
 		panel_semanal.add(viento_semanal5);
 
 		JLabel prob_semanal5 = new JLabel("24 mm");
 		prob_semanal5.setFont(new Font("Dubai", Font.BOLD, 10));
-		prob_semanal5.setBounds(222, 284, 46, 14);
+		prob_semanal5.setBounds(222, 292, 46, 14);
 		panel_semanal.add(prob_semanal5);
 
 		JLabel nieve_semanal5 = new JLabel("24 cm");
 		nieve_semanal5.setFont(new Font("Dubai", Font.BOLD, 10));
-		nieve_semanal5.setBounds(258, 284, 46, 14);
+		nieve_semanal5.setBounds(258, 292, 46, 14);
 		panel_semanal.add(nieve_semanal5);
 
 		JLabel hor_semanal5 = new JLabel("0.0 h");
 		hor_semanal5.setFont(new Font("Dubai", Font.BOLD, 10));
-		hor_semanal5.setBounds(295, 284, 46, 14);
+		hor_semanal5.setBounds(295, 292, 46, 14);
 		panel_semanal.add(hor_semanal5);
 
 		JLabel viento_semanal6 = new JLabel("24 km/h");
 		viento_semanal6.setFont(new Font("Dubai", Font.BOLD, 10));
-		viento_semanal6.setBounds(175, 346, 46, 14);
+		viento_semanal6.setBounds(175, 354, 46, 14);
 		panel_semanal.add(viento_semanal6);
 
 		JLabel prob_semanal6 = new JLabel("24 mm");
 		prob_semanal6.setFont(new Font("Dubai", Font.BOLD, 10));
-		prob_semanal6.setBounds(222, 346, 46, 14);
+		prob_semanal6.setBounds(222, 354, 46, 14);
 		panel_semanal.add(prob_semanal6);
 
 		JLabel nieve_semanal6 = new JLabel("24 cm");
 		nieve_semanal6.setFont(new Font("Dubai", Font.BOLD, 10));
-		nieve_semanal6.setBounds(258, 346, 46, 14);
+		nieve_semanal6.setBounds(258, 354, 46, 14);
 		panel_semanal.add(nieve_semanal6);
 
 		JLabel hor_semanal6 = new JLabel("0.0 h");
 		hor_semanal6.setFont(new Font("Dubai", Font.BOLD, 10));
-		hor_semanal6.setBounds(295, 346, 46, 14);
+		hor_semanal6.setBounds(295, 354, 46, 14);
 		panel_semanal.add(hor_semanal6);
 
 		JLabel Imagen_Tiempo1 = new JLabel("Imagen");
@@ -1651,101 +1651,101 @@ public class PI2 {
 
 
 		JLabel Imagen_viento1 = new JLabel(new ImageIcon("Imagenes/icono_viento.png"));
-		Imagen_viento1.setBounds(180, 0, 30, 30);
+		Imagen_viento1.setBounds(180, 14, 30, 30);
 		panel_semanal.add(Imagen_viento1);
 
 		JLabel Imagen_prob_lluvia1 = new JLabel(new ImageIcon("Imagenes/lluvia_icono.png"));
-		Imagen_prob_lluvia1.setBounds(222, 0, 30, 30);
+		Imagen_prob_lluvia1.setBounds(222, 14, 30, 30);
 		panel_semanal.add(Imagen_prob_lluvia1);
 
 
 		JLabel Imagen_nieve1 = new JLabel(new ImageIcon("Imagenes/copo_nieve_icono.png"));
-		Imagen_nieve1.setBounds(256, 0, 30, 30);
+		Imagen_nieve1.setBounds(256, 14, 30, 30);
 		panel_semanal.add(Imagen_nieve1);
 
 		JLabel Imagen_hor_lluvia1 = new JLabel(new ImageIcon("Imagenes/hora_lluvia_icono.png"));
-		Imagen_hor_lluvia1.setBounds(290, 0, 30, 30);
+		Imagen_hor_lluvia1.setBounds(290, 14, 30, 30);
 		panel_semanal.add(Imagen_hor_lluvia1);
 
 		JLabel Imagen_viento2 = new JLabel(new ImageIcon("Imagenes/icono_viento.png"));
-		Imagen_viento2.setBounds(180, 61, 30, 30);
+		Imagen_viento2.setBounds(180, 75, 30, 30);
 		panel_semanal.add(Imagen_viento2);
 
 		JLabel Imagen_prob_lluvia2 = new JLabel(new ImageIcon("Imagenes/lluvia_icono.png"));
-		Imagen_prob_lluvia2.setBounds(222, 61, 30, 30);
+		Imagen_prob_lluvia2.setBounds(222, 75, 30, 30);
 		panel_semanal.add(Imagen_prob_lluvia2);
 
 		JLabel Imagen_nieve2 = new JLabel(new ImageIcon("Imagenes/copo_nieve_icono.png"));
-		Imagen_nieve2.setBounds(256, 61, 30, 30);
+		Imagen_nieve2.setBounds(256, 75, 30, 30);
 		panel_semanal.add(Imagen_nieve2);
 
 		JLabel Imagen_hor_lluvia2 = new JLabel(new ImageIcon("Imagenes/hora_lluvia_icono.png"));
-		Imagen_hor_lluvia2.setBounds(290, 61, 30, 30);
+		Imagen_hor_lluvia2.setBounds(290, 75, 30, 30);
 		panel_semanal.add(Imagen_hor_lluvia2);
 
 		JLabel Imagen_viento3 = new JLabel(new ImageIcon("Imagenes/icono_viento.png"));
-		Imagen_viento3.setBounds(180, 125, 30, 30);
+		Imagen_viento3.setBounds(180, 139, 30, 30);
 		panel_semanal.add(Imagen_viento3);
 
 		JLabel Imagen_prob_lluvia3 = new JLabel(new ImageIcon("Imagenes/lluvia_icono.png"));
-		Imagen_prob_lluvia3.setBounds(222, 125, 30, 30);
+		Imagen_prob_lluvia3.setBounds(222, 139, 30, 30);
 		panel_semanal.add(Imagen_prob_lluvia3);
 
 
 		JLabel Imagen_nieve3 = new JLabel(new ImageIcon("Imagenes/copo_nieve_icono.png"));
-		Imagen_nieve3.setBounds(256, 125, 30, 30);
+		Imagen_nieve3.setBounds(256, 139, 30, 30);
 		panel_semanal.add(Imagen_nieve3);
 
 		JLabel Imagen_hor_lluvia3 = new JLabel(new ImageIcon("Imagenes/hora_lluvia_icono.png"));
-		Imagen_hor_lluvia3.setBounds(290, 125, 30, 30);
+		Imagen_hor_lluvia3.setBounds(290, 139, 30, 30);
 		panel_semanal.add(Imagen_hor_lluvia3);
 
 		JLabel Imagen_viento4 = new JLabel(new ImageIcon("Imagenes/icono_viento.png"));
-		Imagen_viento4.setBounds(180, 186, 30, 30);
+		Imagen_viento4.setBounds(180, 200, 30, 30);
 		panel_semanal.add(Imagen_viento4);
 
 		JLabel Imagen_prob_lluvia4 = new JLabel(new ImageIcon("Imagenes/lluvia_icono.png"));
-		Imagen_prob_lluvia4.setBounds(222, 186, 30, 30);
+		Imagen_prob_lluvia4.setBounds(222, 200, 30, 30);
 		panel_semanal.add(Imagen_prob_lluvia4);
 
 		JLabel Imagen_nieve4 = new JLabel(new ImageIcon("Imagenes/copo_nieve_icono.png"));
-		Imagen_nieve4.setBounds(256, 186, 30, 30);
+		Imagen_nieve4.setBounds(256, 200, 30, 30);
 		panel_semanal.add(Imagen_nieve4);
 
 		JLabel Imagen_hor_lluvia4 = new JLabel(new ImageIcon("Imagenes/hora_lluvia_icono.png"));
-		Imagen_hor_lluvia4.setBounds(290, 186, 30, 30);
+		Imagen_hor_lluvia4.setBounds(290, 200, 30, 30);
 		panel_semanal.add(Imagen_hor_lluvia4);
 
 		JLabel Imagen_viento5 = new JLabel(new ImageIcon("Imagenes/icono_viento.png"));
-		Imagen_viento5.setBounds(180, 249, 30, 30);
+		Imagen_viento5.setBounds(180, 263, 30, 30);
 		panel_semanal.add(Imagen_viento5);
 
 		JLabel Imagen_prob_lluvia5 = new JLabel(new ImageIcon("Imagenes/lluvia_icono.png"));
-		Imagen_prob_lluvia5.setBounds(222, 249, 30, 30);
+		Imagen_prob_lluvia5.setBounds(222, 263, 30, 30);
 		panel_semanal.add(Imagen_prob_lluvia5);
 
 		JLabel Imagen_nieve5 = new JLabel(new ImageIcon("Imagenes/copo_nieve_icono.png"));
-		Imagen_nieve5.setBounds(256, 249, 30, 30);
+		Imagen_nieve5.setBounds(256, 263, 30, 30);
 		panel_semanal.add(Imagen_nieve5);
 
 		JLabel Imagen_hor_lluvia5 = new JLabel(new ImageIcon("Imagenes/hora_lluvia_icono.png"));
-		Imagen_hor_lluvia5.setBounds(290, 249, 30, 30);
+		Imagen_hor_lluvia5.setBounds(290, 263, 30, 30);
 		panel_semanal.add(Imagen_hor_lluvia5);
 
 		JLabel Imagen_viento6 = new JLabel(new ImageIcon("Imagenes/icono_viento.png"));
-		Imagen_viento6.setBounds(180, 309, 30, 30);
+		Imagen_viento6.setBounds(180, 323, 30, 30);
 		panel_semanal.add(Imagen_viento6);
 
 		JLabel Imagen_prob_lluvia6 = new JLabel(new ImageIcon("Imagenes/lluvia_icono.png"));
-		Imagen_prob_lluvia6.setBounds(222, 309, 30, 30);
+		Imagen_prob_lluvia6.setBounds(222, 323, 30, 30);
 		panel_semanal.add(Imagen_prob_lluvia6);
 
 		JLabel Imagen_nieve6 = new JLabel(new ImageIcon("Imagenes/copo_nieve_icono.png"));
-		Imagen_nieve6.setBounds(256, 309, 30, 30);
+		Imagen_nieve6.setBounds(256, 323, 30, 30);
 		panel_semanal.add(Imagen_nieve6);
 
 		JLabel Imagen_hor_lluvia6 = new JLabel(new ImageIcon("Imagenes/hora_lluvia_icono.png"));
-		Imagen_hor_lluvia6.setBounds(290, 309, 30, 30);
+		Imagen_hor_lluvia6.setBounds(290, 323, 30, 30);
 		panel_semanal.add(Imagen_hor_lluvia6);
 
 
