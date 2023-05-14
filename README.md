@@ -7,12 +7,11 @@
 AÚN EN PROCESO!
 * Datos meteorológicos de hoy
 <br></br>
-![image](https://github.com/Eduu64/APP_METEOROLOGIA_7DIAS_EDU-JORGE/assets/64559740/8b7c9eb9-8884-4eaf-a368-5a33ae8049b4)
+![image](https://github.com/Eduu64/APP_METEOROLOGIA_7DIAS_EDU-JORGE/assets/64559740/5cb9e6b2-d478-4797-ab0d-1a1d41b5d10a)
 <br></br>
 * Temperaturas por horas de hoy
 <br></br>
-![image](https://github.com/Eduu64/APP_METEOROLOGIA_7DIAS_EDU-JORGE/assets/64559740/a33b1e69-1401-445e-9fd5-8d53d04b084b)
-<br></br>
+![image](https://github.com/Eduu64/APP_METEOROLOGIA_7DIAS_EDU-JORGE/assets/64559740/e200f810-c066-4a4a-bbc3-bf8671a46428)<br></br>
 * Temperaturas de los próximos 6 días
 <br></br>
-![image](https://github.com/Eduu64/APP_METEOROLOGIA_7DIAS_EDU-JORGE/assets/64559740/a55f87a9-f88b-483a-9ee8-f5666ca67c68)
+![image](https://github.com/Eduu64/APP_METEOROLOGIA_7DIAS_EDU-JORGE/assets/64559740/27e98955-bb58-4fcd-9ba3-c20974594c7b)
