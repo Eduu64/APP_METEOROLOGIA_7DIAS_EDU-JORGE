@@ -304,62 +304,62 @@ public class PI2 {
 
 		JLabel max_temperatura_semanal1 = new JLabel();
 		max_temperatura_semanal1.setFont(new Font("Dubai", Font.BOLD, 14));
-		max_temperatura_semanal1.setBounds(330, 16, 46, 14);
+		max_temperatura_semanal1.setBounds(335, 16, 46, 14);
 		panel_semanal.add(max_temperatura_semanal1);
 
 		JLabel max_temperatura_semanal2 = new JLabel();
 		max_temperatura_semanal2.setFont(new Font("Dubai", Font.BOLD, 14));
-		max_temperatura_semanal2.setBounds(330, 78, 46, 14);
+		max_temperatura_semanal2.setBounds(335, 78, 46, 14);
 		panel_semanal.add(max_temperatura_semanal2);
 
 		JLabel max_temperatura_semanal3 = new JLabel();
 		max_temperatura_semanal3.setFont(new Font("Dubai", Font.BOLD, 14));
-		max_temperatura_semanal3.setBounds(330, 140, 46, 14);
+		max_temperatura_semanal3.setBounds(335, 140, 46, 14);
 		panel_semanal.add(max_temperatura_semanal3);
 
 		JLabel max_temperatura_semanal4 = new JLabel();
 		max_temperatura_semanal4.setFont(new Font("Dubai", Font.BOLD, 14));
-		max_temperatura_semanal4.setBounds(330, 202, 46, 14);
+		max_temperatura_semanal4.setBounds(335, 202, 46, 14);
 		panel_semanal.add(max_temperatura_semanal4);
 
 		JLabel max_temperatura_semanal5 = new JLabel();
 		max_temperatura_semanal5.setFont(new Font("Dubai", Font.BOLD, 14));
-		max_temperatura_semanal5.setBounds(330, 264, 46, 14);
+		max_temperatura_semanal5.setBounds(335, 264, 46, 14);
 		panel_semanal.add(max_temperatura_semanal5);
 
 		JLabel max_temperatura_semanal6 = new JLabel();
 		max_temperatura_semanal6.setFont(new Font("Dubai", Font.BOLD, 14));
-		max_temperatura_semanal6.setBounds(330, 326, 46, 14);
+		max_temperatura_semanal6.setBounds(335, 326, 46, 14);
 		panel_semanal.add(max_temperatura_semanal6);
 
 		JLabel min_temperatura_semanal1 = new JLabel();
 		min_temperatura_semanal1.setFont(new Font("Dubai", Font.BOLD, 14));
-		min_temperatura_semanal1.setBounds(330, 36, 46, 14);
+		min_temperatura_semanal1.setBounds(335, 36, 46, 14);
 		panel_semanal.add(min_temperatura_semanal1);
 
 		JLabel min_temperatura_semanal2 = new JLabel();
 		min_temperatura_semanal2.setFont(new Font("Dubai", Font.BOLD, 14));
-		min_temperatura_semanal2.setBounds(330, 98, 46, 14);
+		min_temperatura_semanal2.setBounds(335, 98, 46, 14);
 		panel_semanal.add(min_temperatura_semanal2);
 
 		JLabel min_temperatura_semanal3 = new JLabel();
 		min_temperatura_semanal3.setFont(new Font("Dubai", Font.BOLD, 14));
-		min_temperatura_semanal3.setBounds(330, 160, 46, 14);
+		min_temperatura_semanal3.setBounds(335, 160, 46, 14);
 		panel_semanal.add(min_temperatura_semanal3);
 
 		JLabel min_temperatura_semanal4 = new JLabel();
 		min_temperatura_semanal4.setFont(new Font("Dubai", Font.BOLD, 14));
-		min_temperatura_semanal4.setBounds(330, 222, 46, 14);
+		min_temperatura_semanal4.setBounds(335, 222, 46, 14);
 		panel_semanal.add(min_temperatura_semanal4);
 
 		JLabel min_temperatura_semanal5 = new JLabel();
 		min_temperatura_semanal5.setFont(new Font("Dubai", Font.BOLD, 14));
-		min_temperatura_semanal5.setBounds(330, 284, 46, 14);
+		min_temperatura_semanal5.setBounds(335, 284, 46, 14);
 		panel_semanal.add(min_temperatura_semanal5);
 
 		JLabel min_temperatura_semanal6 = new JLabel();
 		min_temperatura_semanal6.setFont(new Font("Dubai", Font.BOLD, 14));
-		min_temperatura_semanal6.setBounds(330, 346, 46, 14);
+		min_temperatura_semanal6.setBounds(335, 346, 46, 14);
 		panel_semanal.add(min_temperatura_semanal6);
 
 		JLabel viento_semanal = new JLabel("24 km/h");
@@ -374,7 +374,7 @@ public class PI2 {
 
 		JLabel nieve_semanal = new JLabel("24 cm");
 		nieve_semanal.setFont(new Font("Dubai", Font.BOLD, 10));
-		nieve_semanal.setBounds(260, 44, 46, 14);
+		nieve_semanal.setBounds(261, 44, 46, 14);
 		panel_semanal.add(nieve_semanal);
 
 		JLabel hor_semanal = new JLabel("0.0 h");
@@ -394,7 +394,7 @@ public class PI2 {
 
 		JLabel nieve_semanal2 = new JLabel("23 cm");
 		nieve_semanal2.setFont(new Font("Dubai", Font.BOLD, 10));
-		nieve_semanal2.setBounds(260, 106, 46, 14);
+		nieve_semanal2.setBounds(261, 106, 46, 14);
 		panel_semanal.add(nieve_semanal2);
 
 		JLabel hor_semanal2 = new JLabel("0.5 h");
@@ -414,7 +414,7 @@ public class PI2 {
 
 		JLabel nieve_semanal3 = new JLabel("24 cm");
 		nieve_semanal3.setFont(new Font("Dubai", Font.BOLD, 10));
-		nieve_semanal3.setBounds(260, 168, 46, 14);
+		nieve_semanal3.setBounds(261, 168, 46, 14);
 		panel_semanal.add(nieve_semanal3);
 
 		JLabel hor_semanal3 = new JLabel("0.0 h");
@@ -434,7 +434,7 @@ public class PI2 {
 
 		JLabel nieve_semanal4 = new JLabel("24 cm");
 		nieve_semanal4.setFont(new Font("Dubai", Font.BOLD, 10));
-		nieve_semanal4.setBounds(260, 230, 46, 14);
+		nieve_semanal4.setBounds(261, 230, 46, 14);
 		panel_semanal.add(nieve_semanal4);
 
 		JLabel hor_semanal4 = new JLabel("0.0 h");
@@ -454,7 +454,7 @@ public class PI2 {
 
 		JLabel nieve_semanal5 = new JLabel("24 cm");
 		nieve_semanal5.setFont(new Font("Dubai", Font.BOLD, 10));
-		nieve_semanal5.setBounds(260, 292, 46, 14);
+		nieve_semanal5.setBounds(261, 292, 46, 14);
 		panel_semanal.add(nieve_semanal5);
 
 		JLabel hor_semanal5 = new JLabel("0.0 h");
@@ -474,7 +474,7 @@ public class PI2 {
 
 		JLabel nieve_semanal6 = new JLabel("24 cm");
 		nieve_semanal6.setFont(new Font("Dubai", Font.BOLD, 10));
-		nieve_semanal6.setBounds(260, 354, 46, 14);
+		nieve_semanal6.setBounds(261, 354, 46, 14);
 		panel_semanal.add(nieve_semanal6);
 
 		JLabel hor_semanal6 = new JLabel("0.0 h");
