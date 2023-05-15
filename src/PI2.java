@@ -1758,18 +1758,6 @@ public class PI2 {
 		desfragmentacion(informacionAPI,ob, panel_hoy, panel_horas, panel_semanal);//se desfragmenta y se representa en la interfaz
 
 		
-		//panel 
-		JLabel fondo = new JLabel(new ImageIcon("Imagenes/cuadrado3.png"));
-		fondo.setBackground(Color.WHITE);
-		fondo.setForeground(Color.WHITE);
-		fondo.setBounds(300, 15, 119, 30);
-		panel.add(fondo);
-		
-		JLabel fondo1 = new JLabel(new ImageIcon("Imagenes/cuadrado4.png"));
-		fondo1.setBackground(Color.WHITE);
-		fondo1.setForeground(Color.WHITE);
-		fondo1.setBounds(7, 5, 162, 34);
-		panel.add(fondo1);
 
 		//fondos panel_hoy
 
