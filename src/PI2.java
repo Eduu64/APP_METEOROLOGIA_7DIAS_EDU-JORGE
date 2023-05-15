@@ -149,72 +149,72 @@ public class PI2 {
 
 		JLabel temp_hor_0 = new JLabel("New label");
 		temp_hor_0.setFont(new Font("Dubai", Font.BOLD, 12));
-		temp_hor_0.setBounds(99, 11, 79, 14);
+		temp_hor_0.setBounds(119, 11, 79, 14);
 		panel_horas.add(temp_hor_0);
 
 		JLabel temp_hor_1 = new JLabel("New label");
 		temp_hor_1.setFont(new Font("Dubai", Font.BOLD, 12));
-		temp_hor_1.setBounds(99, 36, 79, 14);
+		temp_hor_1.setBounds(119, 36, 79, 14);
 		panel_horas.add(temp_hor_1);
 
 		JLabel temp_hor_2 = new JLabel("New label");
 		temp_hor_2.setFont(new Font("Dubai", Font.BOLD, 12));
-		temp_hor_2.setBounds(99, 61, 79, 14);
+		temp_hor_2.setBounds(119, 61, 79, 14);
 		panel_horas.add(temp_hor_2);
 
 		JLabel temp_hor_3 = new JLabel("New label");
 		temp_hor_3.setFont(new Font("Dubai", Font.BOLD, 12));
-		temp_hor_3.setBounds(99, 86, 79, 14);
+		temp_hor_3.setBounds(119, 86, 79, 14);
 		panel_horas.add(temp_hor_3);
 
 		JLabel temp_hor_4 = new JLabel("New label");
 		temp_hor_4.setFont(new Font("Dubai", Font.BOLD, 12));
-		temp_hor_4.setBounds(99, 111, 79, 14);
+		temp_hor_4.setBounds(119, 111, 79, 14);
 		panel_horas.add(temp_hor_4);
 
 		JLabel temp_hor_5 = new JLabel("New label");
 		temp_hor_5.setFont(new Font("Dubai", Font.BOLD, 12));
-		temp_hor_5.setBounds(99, 136, 79, 14);
+		temp_hor_5.setBounds(119, 136, 79, 14);
 		panel_horas.add(temp_hor_5);
 
 		JLabel temp_hor_6 = new JLabel("New label");
 		temp_hor_6.setFont(new Font("Dubai", Font.BOLD, 12));
-		temp_hor_6.setBounds(99, 161, 79, 14);
+		temp_hor_6.setBounds(119, 161, 79, 14);
 		panel_horas.add(temp_hor_6);
 
 		JLabel temp_hor_7 = new JLabel("New label");
 		temp_hor_7.setFont(new Font("Dubai", Font.BOLD, 12));
-		temp_hor_7.setBounds(99, 186, 79, 14);
+		temp_hor_7.setBounds(119, 186, 79, 14);
 		panel_horas.add(temp_hor_7);
 
 		JLabel temp_hor_8 = new JLabel("New label");
 		temp_hor_8.setFont(new Font("Dubai", Font.BOLD, 12));
-		temp_hor_8.setBounds(99, 211, 79, 14);
+		temp_hor_8.setBounds(119, 211, 79, 14);
 		panel_horas.add(temp_hor_8);
 
 		JLabel temp_hor_9 = new JLabel("New label");
 		temp_hor_9.setFont(new Font("Dubai", Font.BOLD, 12));
-		temp_hor_9.setBounds(99, 236, 79, 14);
+		temp_hor_9.setBounds(119, 236, 79, 14);
 		panel_horas.add(temp_hor_9);
 
 		JLabel temp_hor_10 = new JLabel("New label");
 		temp_hor_10.setFont(new Font("Dubai", Font.BOLD, 12));
-		temp_hor_10.setBounds(99, 261, 79, 14);
+		temp_hor_10.setBounds(119, 261, 79, 14);
 		panel_horas.add(temp_hor_10);
 
 		JLabel temp_hor_11 = new JLabel("New label");
 		temp_hor_11.setFont(new Font("Dubai", Font.BOLD, 12));
-		temp_hor_11.setBounds(99, 286, 79, 14);
+		temp_hor_11.setBounds(119, 286, 79, 14);
 		panel_horas.add(temp_hor_11);
 
 		JLabel temp_hor_12 = new JLabel("New label");
 		temp_hor_12.setFont(new Font("Dubai", Font.BOLD, 12));
-		temp_hor_12.setBounds(99, 311, 79, 14);
+		temp_hor_12.setBounds(119, 311, 79, 14);
 		panel_horas.add(temp_hor_12);
 
 		JLabel temp_hor_13 = new JLabel("New label");
 		temp_hor_13.setFont(new Font("Dubai", Font.BOLD, 12));
-		temp_hor_13.setBounds(99, 336, 79, 14);
+		temp_hor_13.setBounds(119, 336, 79, 14);
 		panel_horas.add(temp_hor_13);
 
 		JLabel temp_hor_14 = new JLabel("New label");
@@ -1464,125 +1464,125 @@ public class PI2 {
 
 		JLabel hor0 = new JLabel("00:00");
 		hor0.setFont(new Font("Dubai", Font.BOLD, 12));
-		hor0.setBounds(10, 11, 79, 14);
+		hor0.setBounds(30, 11, 79, 14);
 		panel_horas.add(hor0);
 
 		JLabel hor0_1 = new JLabel("01:00");
 		hor0_1.setFont(new Font("Dubai", Font.BOLD, 12));
-		hor0_1.setBounds(10, 36, 79, 14);
+		hor0_1.setBounds(30, 36, 79, 14);
 		panel_horas.add(hor0_1);
 
 		JLabel hor0_2 = new JLabel("02:00");
 		hor0_2.setFont(new Font("Dubai", Font.BOLD, 12));
-		hor0_2.setBounds(10, 61, 79, 14);
+		hor0_2.setBounds(30, 61, 79, 14);
 		panel_horas.add(hor0_2);
 
 		JLabel hor0_3 = new JLabel("03:00");
 		hor0_3.setFont(new Font("Dubai", Font.BOLD, 12));
-		hor0_3.setBounds(10, 86, 79, 14);
+		hor0_3.setBounds(30, 86, 79, 14);
 		panel_horas.add(hor0_3);
 
 		JLabel hor0_4 = new JLabel("04:00");
 		hor0_4.setFont(new Font("Dubai", Font.BOLD, 12));
-		hor0_4.setBounds(10, 111, 79, 14);
+		hor0_4.setBounds(30, 111, 79, 14);
 		panel_horas.add(hor0_4);
 
 		JLabel hor0_5 = new JLabel("05:00");
 		hor0_5.setFont(new Font("Dubai", Font.BOLD, 12));
-		hor0_5.setBounds(10, 136, 79, 14);
+		hor0_5.setBounds(30, 136, 79, 14);
 		panel_horas.add(hor0_5);
 
 		JLabel hor0_6 = new JLabel("06:00");
 		hor0_6.setFont(new Font("Dubai", Font.BOLD, 12));
-		hor0_6.setBounds(10, 161, 79, 14);
+		hor0_6.setBounds(30, 161, 79, 14);
 		panel_horas.add(hor0_6);
 
 		JLabel hor0_7 = new JLabel("07:00");
 		hor0_7.setFont(new Font("Dubai", Font.BOLD, 12));
-		hor0_7.setBounds(10, 186, 79, 14);
+		hor0_7.setBounds(30, 186, 79, 14);
 		panel_horas.add(hor0_7);
 
 		JLabel hor0_8 = new JLabel("08:00");
 		hor0_8.setFont(new Font("Dubai", Font.BOLD, 12));
-		hor0_8.setBounds(10, 211, 79, 14);
+		hor0_8.setBounds(30, 211, 79, 14);
 		panel_horas.add(hor0_8);
 
 		JLabel hor0_9 = new JLabel("09:00");
 		hor0_9.setFont(new Font("Dubai", Font.BOLD, 12));
-		hor0_9.setBounds(10, 236, 79, 14);
+		hor0_9.setBounds(30, 236, 79, 14);
 		panel_horas.add(hor0_9);
 
-		JLabel hor0_10 = new JLabel("09:00");
+		JLabel hor0_10 = new JLabel("10:00");
 		hor0_10.setFont(new Font("Dubai", Font.BOLD, 12));
-		hor0_10.setBounds(10, 261, 79, 14);
+		hor0_10.setBounds(30, 261, 79, 14);
 		panel_horas.add(hor0_10);
 
-		JLabel hor0_11 = new JLabel("10:00");
+		JLabel hor0_11 = new JLabel("11:00");
 		hor0_11.setFont(new Font("Dubai", Font.BOLD, 12));
-		hor0_11.setBounds(10, 286, 79, 14);
+		hor0_11.setBounds(30, 286, 79, 14);
 		panel_horas.add(hor0_11);
 
-		JLabel hor0_12 = new JLabel("11:00");
+		JLabel hor0_12 = new JLabel("12:00");
 		hor0_12.setFont(new Font("Dubai", Font.BOLD, 12));
-		hor0_12.setBounds(10, 311, 79, 14);
+		hor0_12.setBounds(30, 311, 79, 14);
 		panel_horas.add(hor0_12);
 
-		JLabel hor0_13 = new JLabel("12:00");
+		JLabel hor0_13 = new JLabel("13:00");
 		hor0_13.setFont(new Font("Dubai", Font.BOLD, 12));
-		hor0_13.setBounds(10, 336, 79, 14);
+		hor0_13.setBounds(30, 336, 79, 14);
 		panel_horas.add(hor0_13);
 
-		JLabel hor0_14 = new JLabel("13:00");
+		JLabel hor0_14 = new JLabel("14:00");
 		hor0_14.setFont(new Font("Dubai", Font.BOLD, 12));
 		hor0_14.setBounds(243, 11, 79, 14);
 		panel_horas.add(hor0_14);
 
-		JLabel hor0_15 = new JLabel("14:00");
+		JLabel hor0_15 = new JLabel("15:00");
 		hor0_15.setFont(new Font("Dubai", Font.BOLD, 12));
 		hor0_15.setBounds(243, 36, 79, 14);
 		panel_horas.add(hor0_15);
 
-		JLabel hor0_16 = new JLabel("15:00");
+		JLabel hor0_16 = new JLabel("16:00");
 		hor0_16.setFont(new Font("Dubai", Font.BOLD, 12));
 		hor0_16.setBounds(243, 61, 79, 14);
 		panel_horas.add(hor0_16);
 
-		JLabel hor0_17 = new JLabel("16:00");
+		JLabel hor0_17 = new JLabel("17:00");
 		hor0_17.setFont(new Font("Dubai", Font.BOLD, 12));
 		hor0_17.setBounds(243, 86, 79, 14);
 		panel_horas.add(hor0_17);
 
-		JLabel hor0_18 = new JLabel("17:00");
+		JLabel hor0_18 = new JLabel("18:00");
 		hor0_18.setFont(new Font("Dubai", Font.BOLD, 12));
 		hor0_18.setBounds(243, 111, 79, 14);
 		panel_horas.add(hor0_18);
 
-		JLabel hor0_19 = new JLabel("18:00");
+		JLabel hor0_19 = new JLabel("19:00");
 		hor0_19.setFont(new Font("Dubai", Font.BOLD, 12));
 		hor0_19.setBounds(243, 136, 79, 14);
 		panel_horas.add(hor0_19);
 
-		JLabel hor0_20 = new JLabel("19:00");
+		JLabel hor0_20 = new JLabel("20:00");
 		hor0_20.setFont(new Font("Dubai", Font.BOLD, 12));
 		hor0_20.setBounds(243, 161, 79, 14);
 		panel_horas.add(hor0_20);
 
-		JLabel hor0_21 = new JLabel("20:00");
+		JLabel hor0_21 = new JLabel("21:00");
 		hor0_21.setFont(new Font("Dubai", Font.BOLD, 12));
 		hor0_21.setBounds(243, 186, 79, 14);
 		panel_horas.add(hor0_21);
 
-		JLabel hor0_22 = new JLabel("21:00");
+		JLabel hor0_22 = new JLabel("22:00");
 		hor0_22.setFont(new Font("Dubai", Font.BOLD, 12));
 		hor0_22.setBounds(243, 211, 79, 14);
 		panel_horas.add(hor0_22);
 
-		JLabel hor0_23 = new JLabel("22:00");
+		JLabel hor0_23 = new JLabel("23:00");
 		hor0_23.setFont(new Font("Dubai", Font.BOLD, 12));
 		hor0_23.setBounds(243, 236, 79, 14);
 		panel_horas.add(hor0_23);
 
-		JLabel hor0_24 = new JLabel("23:00");
+		JLabel hor0_24 = new JLabel("00:00");
 		hor0_24.setFont(new Font("Dubai", Font.BOLD, 12));
 		hor0_24.setBounds(243, 261, 79, 14);
 		panel_horas.add(hor0_24);
@@ -1788,14 +1788,14 @@ public class PI2 {
 		JLabel Recomendaciones_fondo = new JLabel(new ImageIcon("Imagenes/cuadrado.png"));
 		Recomendaciones_fondo.setForeground(Color.WHITE);
 		Recomendaciones_fondo.setBackground(Color.WHITE);
-		Recomendaciones_fondo.setBounds(10, 235, 409, 127);
+		Recomendaciones_fondo.setBounds(9, 235, 409, 127);
 		panel_hoy.add(Recomendaciones_fondo);
 
 		//panel_horas
 		JLabel Imagen_fondo_horas = new JLabel(new ImageIcon("Imagenes/cuadrado5.png"));
 		Imagen_fondo_horas.setBackground(Color.WHITE);
 		Imagen_fondo_horas.setForeground(Color.WHITE);
-		Imagen_fondo_horas.setBounds(0, 3, 152, 353);
+		Imagen_fondo_horas.setBounds(17, 3, 152, 353);
 		panel_horas.add(Imagen_fondo_horas);
 		
 		JLabel Imagen_fondo_horas1= new JLabel(new ImageIcon("Imagenes/cuadrado6.png"));
