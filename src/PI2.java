@@ -94,18 +94,6 @@ public class PI2 {
 		Recomendaciones.setBounds(17, 245, 409, 36);
 		panel_hoy.add(Recomendaciones);
 
-		JLabel Recomendaciones1 = new JLabel("New label");
-		Recomendaciones1.setFont(new Font("Dubai", Font.BOLD, 12));
-		Recomendaciones1.setVerticalAlignment(SwingConstants.TOP);
-		Recomendaciones1.setBounds(17, 282, 409, 36);
-		panel_hoy.add(Recomendaciones1);
-
-		JLabel Recomendaciones2 = new JLabel("New label");
-		Recomendaciones2.setFont(new Font("Dubai", Font.BOLD, 12));
-		Recomendaciones2.setVerticalAlignment(SwingConstants.TOP);
-		Recomendaciones2.setBounds(17, 322, 409, 36);
-		panel_hoy.add(Recomendaciones2);
-
 
 		JLabel Info_viento = new JLabel();
 		Info_viento.setFont(new Font("Dubai", Font.BOLD, 13));
