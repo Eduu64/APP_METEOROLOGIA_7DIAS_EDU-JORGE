@@ -1355,6 +1355,7 @@ public class PI2 {
 		prob_semanal6.setText(String.valueOf(lluv[6])+ " mm");
 		hor_semanal6.setText(String.valueOf(hor_lluv[6])+ " h");
 		nieve_semanal6.setText(String.valueOf(niev[6]) + " cm");
+		//recomendaciones
 	}
 
 
