@@ -1,5 +1,7 @@
 import java.awt.Color;
 import java.awt.Font;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.text.SimpleDateFormat;
@@ -76,7 +78,7 @@ public class PI2 {
 	}
 
 	// Función que procesa la respuesta de la API y obtiene la información de temperatura para los días requeridos
-	public static void desfragmentacion(String info, JSONObject ob, JPanel panel_hoy, JPanel panel_horas, JPanel panel_semanal) {
+	public static void desfragmentacion(String info, JSONObject ob, JPanel panel_hoy, JPanel panel_horas, JPanel panel_semanal){
 
 		JLabel Imagen_Tiempo = new JLabel();
 		Imagen_Tiempo.setBounds(297, 20, 90, 90);
@@ -1356,6 +1358,65 @@ public class PI2 {
 		hor_semanal6.setText(String.valueOf(hor_lluv[6])+ " h");
 		nieve_semanal6.setText(String.valueOf(niev[6]) + " cm");
 		//recomendaciones
+		String alerta = "¡Alerta! No es recomendable hacer mantenimiento debido a:";
+		String alertas = "";
+		boolean hayAlertas = false;
+
+		if (temperatura[0] > 30) {
+		    alertas += "Temperatura demasiado alta.\n";
+		    hayAlertas = true;
+		}
+
+		if (temperatura[0] < 5) {
+		    alertas += "Temperatura demasiado baja.\n";
+		    hayAlertas = true;
+		}
+
+		if (lluv[0] > 25) {
+		    alertas += "Alta probabilidad de lluvia.\n";
+		    hayAlertas = true;
+		}
+
+		if (niev[0] > 15) {
+		    alertas += "Alta probabilidad de nieve./n";
+		    hayAlertas = true;
+		}
+
+		if (vient[0] > 20) {
+		    alertas += "Alta velocidad del viento.\n";
+		    hayAlertas = true;
+		}
+
+		if (hayAlertas) {
+		    Recomendaciones.setText("<html>" + alerta + "<br>" + alertas + "</html>");
+		} else {
+		    Recomendaciones.setText("Se puede realizar el mantenimiento sin ningún riesgo.");
+		}
+		
+	   
+		try (FileWriter fw = new FileWriter("BaseDeDatos.csv",true)) {
+			for(int i=0;i<=6;i++) {
+				fw.write(dias_semana_sin_horas[i]+";");
+				fw.write(temperatura[i]+";");
+				fw.write(cod[i]+";");
+				fw.write(temperatura_max[i]+";");
+				fw.write(temperatura_min[i]+";");
+				fw.write(lluv[i]+";");
+				fw.write(hor_lluv[i]+";");
+				fw.write(niev[i]+";");
+				fw.write(vient[i]+"\n");
+				if(i==6) {
+				fw.write("---------------------------------------------------------------");
+				fw.write("\n");
+				}
+				
+			}
+
+		}catch(Exception e){
+			System.out.print("error");
+		}
+	
+			
 	}
 
 
@@ -1373,6 +1434,7 @@ public class PI2 {
 
 		//parametros de interfaz asi como labels,etc.
 		interfaz.setAlwaysOnTop(true);
+		interfaz.setResizable(false);
 		interfaz.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		interfaz.setBounds(100, 100, 450, 507);
 		JPanel contentPane = new JPanel();
@@ -1809,11 +1871,12 @@ public class PI2 {
 		//interfaz visible
 
 		interfaz.setVisible(true);
-
-
-
-
-
+		
+	
+	
+	
+		
+	
 	}
 
 }
