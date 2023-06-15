@@ -1,12 +1,11 @@
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.Toolkit;
 import java.io.FileWriter;
-import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Scanner;
-
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -15,10 +14,8 @@ import javax.swing.JTabbedPane;
 import javax.swing.SwingConstants;
 import javax.swing.UIManager;
 import javax.swing.border.EmptyBorder;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
-
 import java.util.Calendar;
 import java.util.Date;
 
@@ -42,9 +39,9 @@ public class PI2 {
 		dia_final = c.getTime();
 
 
-		String fecha_actual = ft.format(dia);
-		String fecha_fin = ft.format(dia_final);
-
+		String fecha_actual = ft.format(dia); //se establece en la string el dia con el formato especificado
+		String fecha_fin = ft.format(dia_final); //se establece en la string el dia con el formato especificado
+		//fechas para establecer el rango de fechas en la busqueda en la API
 
 		//System.out.println(fecha_actual);
 		//System.out.println(fecha_fin);
@@ -79,7 +76,7 @@ public class PI2 {
 
 	// Función que procesa la respuesta de la API y obtiene la información de temperatura para los días requeridos
 	public static void desfragmentacion(String info, JSONObject ob, JPanel panel_hoy, JPanel panel_horas, JPanel panel_semanal){
-
+		//Se establece los componentes de la GUI
 		JLabel Imagen_Tiempo = new JLabel();
 		Imagen_Tiempo.setBounds(297, 20, 90, 90);
 		panel_hoy.add(Imagen_Tiempo);
@@ -91,9 +88,9 @@ public class PI2 {
 
 
 		JLabel Recomendaciones = new JLabel("New label");
-		Recomendaciones.setFont(new Font("Dubai", Font.BOLD, 12));
+		Recomendaciones.setFont(new Font("Dubai", Font.PLAIN, 10));
 		Recomendaciones.setVerticalAlignment(SwingConstants.TOP);
-		Recomendaciones.setBounds(17, 245, 409, 36);
+		Recomendaciones.setBounds(18, 245, 409, 250);
 		panel_hoy.add(Recomendaciones);
 
 
@@ -496,11 +493,11 @@ public class PI2 {
 		Imagen_Tiempo6.setBounds(80, 317, 85, 55);
 		panel_semanal.add(Imagen_Tiempo6);
 
-		//formatos dias
+		//Se establecen formatos dias
 		SimpleDateFormat hr = new SimpleDateFormat("yyyy-MM-dd HH:00");
 		SimpleDateFormat di = new SimpleDateFormat("E yyyy-MM-dd");
 
-		//variables para los datos
+		//variables para guardar los datos
 		double [] temperatura = new double[192];
 		int cod[] = new int[7];
 		double temperatura_max[]=new double[7];	
@@ -530,7 +527,7 @@ public class PI2 {
 			fecha[i]=dias.getString(i).replace("T"," "); //guarda las fechas de las temperaturas
 
 		}
-
+		//Se crea un array con los 7 dias de la semana
 		Calendar c = Calendar.getInstance();
 		String []dias_semana = new String[7];
 		String []dias_semana_sin_horas = new String[7];
@@ -540,8 +537,8 @@ public class PI2 {
 			c.setTime(dia);
 			c.add(Calendar.DATE, z);
 			dia = c.getTime();
-			dias_semana[z]=hr.format(dia); //Se crea un array de los 7 dias de la semana en la misma hora que nos encontramos
-			dias_semana_sin_horas[z]=di.format(dia); //Se crea un array de los 7 dias de la semana sin hora
+			dias_semana[z]=hr.format(dia); //Se guarda en el array los 7 dias de la semana en la misma hora que nos encontramos
+			dias_semana_sin_horas[z]=di.format(dia); //Se guarda en el array de los 7 dias de la semana sin hora
 		}
 
 		for(int i = 0;i<=6;i++) {
@@ -570,6 +567,7 @@ public class PI2 {
 
 			}
 		}//fin del bucle
+		//Establece las imagenes del tiempo, el switch recorre los codigos los código WMO los if son para establecer la foto en cada dia que tenga ese código
 		try {
 			ImageIcon icono = new ImageIcon(); 
 			for(int i=0;i<=6;i++) {
@@ -1357,43 +1355,44 @@ public class PI2 {
 		prob_semanal6.setText(String.valueOf(lluv[6])+ " mm");
 		hor_semanal6.setText(String.valueOf(hor_lluv[6])+ " h");
 		nieve_semanal6.setText(String.valueOf(niev[6]) + " cm");
-		//recomendaciones
+
+		//recomendaciones, haciendo un filtro con los if
 		String alerta = "¡Alerta! No es recomendable hacer mantenimiento debido a:";
 		String alertas = "";
 		boolean hayAlertas = false;
 
-		if (temperatura[0] > 30) {
-		    alertas += "Temperatura demasiado alta.\n";
-		    hayAlertas = true;
+		if (temperatura_max[0] > 0) {
+			alertas += "Temperatura máxima demasiada alta.<br>";
+			hayAlertas = true;
 		}
 
-		if (temperatura[0] < 5) {
-		    alertas += "Temperatura demasiado baja.\n";
-		    hayAlertas = true;
+		if (temperatura_min[0] < 20) {
+			alertas += "Temperatura mínima demasiado baja<br>";
+			hayAlertas = true;
 		}
 
-		if (lluv[0] > 25) {
-		    alertas += "Alta probabilidad de lluvia.\n";
-		    hayAlertas = true;
+		if (lluv[0] > -1) {
+			alertas += "Alta probabilidad de lluvia.<br>";
+			hayAlertas = true;
 		}
 
-		if (niev[0] > 15) {
-		    alertas += "Alta probabilidad de nieve./n";
-		    hayAlertas = true;
+		if (niev[0] > -1) {
+			alertas += "Alta probabilidad de nieve.<br>";
+			hayAlertas = true;
 		}
 
-		if (vient[0] > 20) {
-		    alertas += "Alta velocidad del viento.\n";
-		    hayAlertas = true;
+		if (vient[0] > 0) {
+			alertas += "Alta velocidad del viento.<br>";
+			hayAlertas = true;
 		}
 
 		if (hayAlertas) {
-		    Recomendaciones.setText("<html>" + alerta + "<br>" + alertas + "</html>");
+			Recomendaciones.setText("<html>" + alerta + "<br>" + alertas + "</html>");
 		} else {
-		    Recomendaciones.setText("Se puede realizar el mantenimiento sin ningún riesgo.");
+			Recomendaciones.setText("Se puede realizar el mantenimiento sin ningún riesgo.");
 		}
-		
-	   
+
+		//crea y guarda en el archivo csv las variables para crear el historico
 		try (FileWriter fw = new FileWriter("BaseDeDatos.csv",true)) {
 			for(int i=0;i<=6;i++) {
 				fw.write(dias_semana_sin_horas[i]+";");
@@ -1406,17 +1405,13 @@ public class PI2 {
 				fw.write(niev[i]+";");
 				fw.write(vient[i]+"\n");
 				if(i==6) {
-				fw.write("---------------------------------------------------------------");
-				fw.write("\n");
+					fw.write("---------------------------------------------------------------");
+					fw.write("\n");
 				}
-				
 			}
-
 		}catch(Exception e){
-			System.out.print("error");
+			System.out.print(e.getMessage());//obtiene el error
 		}
-	
-			
 	}
 
 
@@ -1435,6 +1430,7 @@ public class PI2 {
 		//parametros de interfaz asi como labels,etc.
 		interfaz.setAlwaysOnTop(true);
 		interfaz.setResizable(false);
+		interfaz.setIconImage(Toolkit.getDefaultToolkit().getImage("Imagenes/Logo.png"));
 		interfaz.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		interfaz.setBounds(100, 100, 450, 507);
 		JPanel contentPane = new JPanel();
@@ -1445,7 +1441,6 @@ public class PI2 {
 
 		JPanel panel = new JPanel();
 		panel.setBounds(0, 0, 434, 51);
-		//panel.setBackground(new Color(96,122,30));
 		contentPane.add(panel);
 		panel.setLayout(null);
 
@@ -1808,7 +1803,7 @@ public class PI2 {
 		JSONObject ob = new JSONObject(informacionAPI); //se convierte en objeto la respuesta de la API
 		desfragmentacion(informacionAPI,ob, panel_hoy, panel_horas, panel_semanal);//se desfragmenta y se representa en la interfaz
 
-		
+
 
 		//fondos panel_hoy
 
@@ -1836,7 +1831,7 @@ public class PI2 {
 		Imagen_fondo_horas.setForeground(Color.WHITE);
 		Imagen_fondo_horas.setBounds(17, 3, 152, 353);
 		panel_horas.add(Imagen_fondo_horas);
-		
+
 		JLabel Imagen_fondo_horas1= new JLabel(new ImageIcon("Imagenes/cuadrado6.png"));
 		Imagen_fondo_horas1.setBackground(Color.WHITE);
 		Imagen_fondo_horas1.setForeground(Color.WHITE);
@@ -1869,14 +1864,13 @@ public class PI2 {
 		panel_semanal.add(fondo_tiempo5);
 
 		//interfaz visible
-
 		interfaz.setVisible(true);
-		
-	
-	
-	
-		
-	
+
+
+
+
+
+
 	}
 
 }
