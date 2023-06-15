@@ -7,7 +7,7 @@
 AÚN EN PROCESO!
 * Datos meteorológicos de hoy
 <br></br>
-![image](https://github.com/Eduu64/APP_METEOROLOGIA_7DIAS_EDU-JORGE/assets/64559740/8809c2bc-6a21-4085-9c33-0cc5f03d30df)
+![image](https://github.com/Eduu64/APP_METEOROLOGIA_7DIAS_EDU-JORGE/assets/64559740/37e6e5fd-3e2a-4660-8adb-34ae22d7ac6d)
 <br></br>
 * Temperaturas por horas de hoy
 <br></br>
