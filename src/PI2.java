@@ -1396,7 +1396,6 @@ public class PI2 {
 		try (FileWriter fw = new FileWriter("BaseDeDatos.csv",true)) {
 			for(int i=0;i<=6;i++) {
 				fw.write(dias_semana_sin_horas[i]+";");
-				fw.write(temperatura[i]+";");
 				fw.write(cod[i]+";");
 				fw.write(temperatura_max[i]+";");
 				fw.write(temperatura_min[i]+";");
