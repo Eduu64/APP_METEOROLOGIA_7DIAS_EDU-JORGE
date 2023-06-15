@@ -1361,27 +1361,27 @@ public class PI2 {
 		String alertas = "";
 		boolean hayAlertas = false;
 
-		if (temperatura_max[0] > 0) {
+		if (temperatura_max[0] > 38) {
 			alertas += "Temperatura máxima demasiada alta.<br>";
 			hayAlertas = true;
 		}
 
-		if (temperatura_min[0] < 20) {
+		if (temperatura_min[0] < 0) {
 			alertas += "Temperatura mínima demasiado baja<br>";
 			hayAlertas = true;
 		}
 
-		if (lluv[0] > -1) {
+		if (lluv[0] > 15) {
 			alertas += "Alta probabilidad de lluvia.<br>";
 			hayAlertas = true;
 		}
 
-		if (niev[0] > -1) {
+		if (niev[0] > 3) {
 			alertas += "Alta probabilidad de nieve.<br>";
 			hayAlertas = true;
 		}
 
-		if (vient[0] > 0) {
+		if (vient[0] > 25) {
 			alertas += "Alta velocidad del viento.<br>";
 			hayAlertas = true;
 		}
