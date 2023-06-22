@@ -1,7 +1,8 @@
 # APP de METEOROLOGIA de 7 DIAS AUTORES: EDU y JORGE
 
 ## Dependencias
-* Json para Java
+* Json para Java (Incluído en el proyecto)
+* Java
  
 ## Demostración
 * Datos meteorológicos de hoy
