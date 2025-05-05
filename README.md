@@ -1,4 +1,6 @@
-# APP de METEOROLOGIA de 7 DIAS AUTORES: EDU y JORGE
+# APP de METEOROLOGIA 
+
+AUTORES: EDU y JORGE
 
 ## Dependencias
 * Json para Java (Incluído en el proyecto)
